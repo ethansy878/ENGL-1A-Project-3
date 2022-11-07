@@ -1,6 +1,7 @@
 /* General Stuff */
+
 :root {
-    /* Page Variables */
+    /* Page Variables Here */
     --ig: #e90f99;
     --dc: #5865f2;
     --grad: linear-gradient(to right, var(--ig), var(--dc));
@@ -9,14 +10,6 @@
 
 * {
     box-sizing: border-box;
-}
-
-.ig-theme {
-    background-color: var(--ig);
-}
-
-.dc-theme {
-    background-color: var(--dc);
 }
 
 body {
@@ -39,7 +32,17 @@ h3 {
     font-size: 20px;
 }
 
-/* Narrator - the tour guide or page talking, div objects with mainly text */
+/* Themes */
+.ig-theme {
+    background-color: var(--ig);
+}
+
+.dc-theme {
+    background-color: var(--dc);
+}
+
+
+/* Narrator - the tour guide/page talking, div objects with mainly text */
 .nar {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -101,45 +104,70 @@ h3 {
 
 /* Specific Stuff  */
 
-#title-container {
-    --titleBgDisplaying: var(--grad); /* JS will modify this */
-    background-image: var(--titleBgDisplaying);
-    position: relative;
+/* Front Page */
+    #title-container {
+        --titleBgDisplaying: var(--grad); /* JS will modify this */
+        background-image: var(--titleBgDisplaying);
+        position: relative;
 
-    left: 0px;
-    top: 0px;
+        left: 0px;
+        top: 0px;
 
-    margin: 0px;
-    padding: 10px;
-    height: calc(100vh - 20px);
+        margin: 0px;
+        padding: 10px;
+        height: calc(100vh - 20px);
 
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 15px;
-    border-color: white;
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 15px;
+        border-color: white;
 
-    /* For the text */
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
+        /* For the text */
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
 
-#author {
-    position: absolute;
-    
-    bottom: 0px;
-    left: 0px;
-    
-    margin: 0px;
-    height: 5%;
-    min-height: 30px;
-    width: 100%;
+    #author {
+        position: absolute;
+        
+        bottom: 0px;
+        left: 0px;
+        
+        margin: 0px;
+        height: 5%;
+        min-height: 30px;
+        width: 100%;
 
-    /*border-color: white;
-    border-style: solid;*/
-}
+        /*border-color: white;
+        border-style: solid;*/
+    }
 
-#title-scroll-arrow {
-    height: 50px; 
-    width: 50px;
-}
+    #title-scroll-arrow {
+        height: 50px; 
+        width: 50px;
+    }
+
+/* Other Pages */
+    #section-container {
+        --titleBgDisplaying: var(--grad);
+        background-image: var(--titleBgDisplaying);
+        position: relative;
+
+        left: 0px;
+        top: 0px;
+
+        margin: 0px;
+        padding: 10px;
+        height: calc(25vh);
+
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 15px;
+        border-color: white;
+
+        /* For the text */
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
