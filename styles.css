@@ -1,3 +1,145 @@
-#main-container {
-    background-color: aqua;
+/* General Stuff */
+:root {
+    /* Page Variables */
+    --ig: #e90f99;
+    --dc: #5865f2;
+    --grad: linear-gradient(to right, var(--ig), var(--dc));
+    /* <!> --art: */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ig-theme {
+    background-color: var(--ig);
+}
+
+.dc-theme {
+    background-color: var(--dc);
+}
+
+body {
+    background: gray;
+}
+
+/* Header customization for opening title */
+h1 {
+    font-style: oblique;
+    font-size: 50px;
+}
+
+h2 {
+    font-style: normal;
+    font-size: 30px;
+}
+
+h3 {
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Narrator - the tour guide or page talking, div objects with mainly text */
+.nar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+    overflow-wrap: break-word;
+
+    position: relative;
+
+    width: fit-content;
+    max-width: 90vw;
+
+    margin: -2px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+
+    background-color: darkgray;
+}
+
+/* Response - where user interacts, div objects with stuff in them */
+.res {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+    overflow-wrap: break-word;
+
+    width: fit-content;
+    max-width: 90vw;
+
+    margin: -2px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    float: right;
+    white-space: nowrap;
+
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: white;
+
+    background-color: darkgray;
+}
+
+.starter {
+    margin-top: 20px;
+    clear: both;
+}
+
+.finisher {
+    margin-bottom: 20px;
+}
+
+
+/* Specific Stuff  */
+
+#title-container {
+    --titleBgDisplaying: var(--grad); /* JS will modify this */
+    background-image: var(--titleBgDisplaying);
+    position: relative;
+
+    left: 0px;
+    top: 0px;
+
+    margin: 0px;
+    padding: 10px;
+    height: calc(100vh - 20px);
+
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    border-color: white;
+
+    /* For the text */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#author {
+    position: absolute;
+    
+    bottom: 0px;
+    left: 0px;
+    
+    margin: 0px;
+    height: 5%;
+    min-height: 30px;
+    width: 100%;
+
+    /*border-color: white;
+    border-style: solid;*/
+}
+
+#title-scroll-arrow {
+    height: 50px; 
+    width: 50px;
 }
