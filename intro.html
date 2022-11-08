@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Introduction | Open and Closed Media</title>
+</head>
+<body>
+    <div id="section-container">
+        <h1 id="title">page 1</h1>
+    </div>
+    <br>
+    <!-- "nar" class = narrator, "res" class = response -->
+
+    <script>
+        // function to write into narration box based on what user clicks in response box
+        function responseWrite(txtID, type){
+            element = document.getElementById(txtID);
+            element.innerHTML = element.getAttribute('data-' + type);
+        }
+
+        // function to switch themes by managing local storage
+        function themeSwitch(){
+            console.log("WIP");
+        }
+    </script>
+
+    <div class="nar starter">
+        <p>Hey there!</p>
+    </div>
+    <div class="nar finisher">
+        <p>Welcome to "Open and Closed Media", an interactive web presentation.</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp1', 'A') 
+            responseWrite('rsp2', 'A')">
+            Hello. Please introduce yourself.
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp1', 'B')
+            responseWrite('rsp2', 'B')">
+            Hi! Nice to meet you. Let's begin the tour!
+        </button>
+        <br>
+    </div>
+    
+    <div class="nar starter">
+        <p id="rsp1" 
+        data-A="Greetings, my name is Ethan. I am currently a college student and will be your guide through this presentation." 
+        data-B="Thanks! We'll get started right away. I just want to let you know that I will be your guide for this web presentation.">
+            ResponseText
+    </p> 
+    </div>
+    <div class="nar finisher">
+        <p id="rsp2"
+        data-A="Here's some quick info about me! <img src='/images/placeholder.png'>"
+        data-B="Very briefly: I am a current college student, I'm  majoring in Computer Science and Engineering, and I like all things technology.">
+            ResponseText
+        </p> 
+    </div>
+
+    <div class="nar starter">
+        <p>We will begin shortly. Before we start, I want you to pick the app you like more: Instagram or Discord.</p> 
+    </div>
+    <div class="nar finisher">
+        <p>If you don't have a favorite, just choose a random one.</p> 
+    </div>
+
+    <div class="res">
+        <button onclick="themeSwitch()">
+            Instagram!
+        </button>
+        <br>
+        <button onclick="themeSwitch()">
+            Discord!
+        </button>
+        <br>
+    </div>
+
+    <div class="nar starter">
+        <p>Thanks for choosing! Now we have set the vibe, and are ready to begin.</p> 
+    </div>
+    <div class="nar finisher">
+        <p>Let's explore our first app. Click the button below!</p> 
+    </div>
+
+    <button class="endlink" onclick="window.location.href='ig1.html'">
+        Next Page
+    </button>  
+
+    <!--The magic script-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -2,9 +2,17 @@
 
 :root {
     /* Page Variables Here */
-    --ig: #e90f99;
-    --dc: #5865f2;
-    --grad: linear-gradient(to right, var(--ig), var(--dc));
+    /* Colors: Type (default, instagram, discord), then Bright, Dark, and Font */
+    --dfB: #cecece;
+    --dfD: #747474;
+    --dfF: #ffffff;
+    --igB: #e90f99;
+    --igD: #730994;
+    --igF: #e6cbe1;
+    --dcB: #5865f2;
+    --dcD: #36393f;
+    --dcF: #edeef8;
+    --grad: linear-gradient(to right, var(--igB), var(--dcB));
     /* <!> --art: */
 }
 
@@ -12,35 +20,40 @@
     box-sizing: border-box;
 }
 
+
+/* GOTTA FIX THIS THEMING STUF, PROB AFTER ALL CONTENT IS IN */
 body {
-    background: gray;
+    background: var(--dfD);
+}
+
+/* Themes */
+.df-theme {
+    background-color: var(--dfD)
+}
+
+.ig-theme {
+    background-color: var(--igD);
+}
+
+.dc-theme {
+    background-color: var(--dcD);
 }
 
 /* Header customization for opening title */
 h1 {
     font-style: oblique;
-    font-size: 50px;
+    font-size: xx-large;
 }
 
 h2 {
     font-style: normal;
-    font-size: 30px;
+    font-size: x-large;
 }
 
 h3 {
     font-style: normal;
-    font-size: 20px;
+    font-size: larger;
 }
-
-/* Themes */
-.ig-theme {
-    background-color: var(--ig);
-}
-
-.dc-theme {
-    background-color: var(--dc);
-}
-
 
 /* Narrator - the tour guide/page talking, div objects with mainly text */
 .nar {
@@ -106,7 +119,7 @@ h3 {
 
 /* Front Page */
     #title-container {
-        --titleBgDisplaying: var(--grad); /* JS will modify this */
+        --titleBgDisplaying: var(--grad); /* Tmp */
         background-image: var(--titleBgDisplaying);
         position: relative;
 
@@ -146,6 +159,51 @@ h3 {
     #title-scroll-arrow {
         height: 50px; 
         width: 50px;
+    }
+
+    /*
+    #overview-container {
+    }*/
+
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .flex-text {
+        width: 40vw;
+        max-width: 400px;
+        max-height: 400px;
+
+        margin: 10px;
+        margin-right: calc(5px + 1vw);
+        padding: 5px;
+
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 15px;
+        border-color: white;
+
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+
+    .flex-img {
+        width: 40vw;
+        max-width: 400px;
+        max-height: 400px;
+
+        margin: 10px;
+        margin-left: calc(5px + 1vw);
+        padding: 5px;
+
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 15px;
+        border-color: white;
     }
 
 /* Other Pages */

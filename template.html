@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>??? | Open and Closed Media</title>
+</head>
+<body>
+    <div id="section-container">
+        <h1 id="title">???</h1>
+    </div>
+    <br>
+    <!-- "nar" class = narrator, "res" class = response -->
+
+    <script>
+        // function to write into narration box based on what user clicks in response box
+        function responseWrite(txtID, type){
+            element = document.getElementById(txtID);
+            element.innerHTML = element.getAttribute('data-' + type);
+        }
+    </script>
+
+    <div class="nar starter">
+        <p>NarrationText</p>
+    </div>
+    <div class="nar finisher">
+        <p>NarrationText</p>
+    </div>
+
+    <div class="res">
+        <button onclick="responseWrite('rsp1', 'A')">
+            Button.
+        </button>
+        <br>
+        <button onclick="responseWrite('rsp1', 'B')">
+            Button?
+        </button>
+        <br>
+    </div>
+    
+    <div class="nar starter">
+        <p id="rsp1" 
+        data-A="Hey" 
+        data-B="LOL">
+            ResponseText
+    </p> 
+    </div>
+    <div class="nar finisher">
+        <p id="rsp2"
+        data-A="COOL"
+        data-B="NICE">
+            ResponseText
+        </p> 
+    </div>
+
+    <button class="endlink" onclick="window.location.href='ig1.html'">
+        Next Page
+    </button>
+
+</body>
+</html>
