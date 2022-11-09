@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Problems of Instagram | Open and Closed Media</title>
+</head>
+<body>
+    <div id="section-container">
+        <h1 id="title">page 3</h1>
+    </div>
+    <br>
+    <script src="functions.js"></script>
+
+
+    <!-- "nar" class = narrator, "res" class = response -->
+    <div class="nar starter">
+        <p>There are two fundamental issues with Instagram I want to address here.</p>
+    </div>
+    <div class="nar">
+        <p>First, their algorithms. These things completely govern what we see on our front pages, often times through ways we don't expect.</p>
+    </div>
+    <div class="nar finisher">
+        <p>To demonstrate, let's consider a scenario. Suppose your friend asks you about one of the following topics, you enter it into your search bar, and you hit search:</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rspNULL', 'A')">
+            <!--advertisement('A')-->
+            best pizza places
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rspNULL', 'A')">
+            <!--advertisement('B')-->
+            new iPhone review
+        </button>
+        <br>
+        <button onclick="
+        responseWrite('rspNULL', 'A')">
+            <!--advertisement('C')-->
+            quick workout idea
+        </button>
+        <br>
+    </div>
+    
+    <div class="nar starter">
+        <p>It seems like such a harmless task, searching for information, but-</p> 
+    </div>
+    <div class="nar">
+        <p>(A Message from our Sponsor) <br> <img src="images/placeholder.png"></p>
+    </div>
+    <div class="nar finisher">
+        <p>...can get in the way of your usage.</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp1', 'A')">
+            <!--advertisement('A')-->
+                Wait, say that again! You got cut off by a sponsored message!
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp1', 'B')">
+            <!--advertisement('B')-->
+                Huh? Why is this on my screen?
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp1"
+        data-A="Wait, what? A sponsored message... oh, an ad! It blocked  our conversation?"
+        data-B="What is? Oh wait, is it a sponsored message that looks like an advertisement?">
+        ResponseText</p>
+    </div>
+    <div class="nar">
+        <p>Well, that's the algorithm at work. I was explaining that before I was rudely interrupted.</p>
+    </div>
+    <div class="nar finisher">
+        <p>The algorithm thought that ad was relevant to you based on your search. It also predicted that you would interact with it even if it wasn't what you wanted in the moment.</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp2', 'A')">
+            <!--advertisement('A')-->
+            That's so annoying!
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp2', 'B')">
+            <!--advertisement('B')-->
+            It had to interfere, didn't it?
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp2"
+        data-A="I agree! The fact that it messed up our conversation only makes it worse."
+        data-B="Yes, it had to. That's how ads work and how the algorithm enforces its predictions on people.">
+        ResponseText</p>
+    </div>
+    <div class="nar">
+        <p>I have personally experienced a scenario in my Instagram feed where an ad, just like the one you saw, took the place of my friend's post. They purposely threw me out of the loop!</p>
+    </div>
+    <div class="nar finisher">
+        <p>Ads and the algorithm are annoying, there's no doubt about it. But there is another problem here that is far worse.</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp3', 'A')">
+            It gets worse?
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp3', 'A')">
+            I don't like where this is going.
+        </button>
+    </div>
+
+    <div class="nar starter finisher">
+        <p id="rsp3"
+        data-A="Mhm. Now, I have archived three messages that represent our next problem. Please select whose message you want to see:">
+        ResponseText</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp4', 'A')">
+            Let's see the message from "little.timmy.plays.99".
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp4', 'B')">
+            Let's see the message from "thebestparent".
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp4', 'B')">
+            Let's see the message from "PoliticianPeter".
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p>(Message) <br> <img style="width: 100%;" src="images/placeholder.png"></p>
+    </div>
+    <div class="nar">
+        <p>Quite heated, right?</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp5', 'A')">
+            That message grinds my gears. Why is that person so mean?
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp5', 'B')">
+            Heated is an understatement. They're so toxic!
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp5"
+        data-A="Some people are, unfortunately, like that by nature."
+        data-B="You said the right word: toxic.">
+        ResponseText</p>
+    </div>
+    <div class="nar">
+        <p>Scattered throughout open media are trolls, people who purposely try to hurt others' feelings.</p>
+    </div>
+    <div class="nar finisher">
+        <p>They say stuff to other users that is similar to what you saw. The recipient has to either ignore it (and hurt their self-esteem) or defend (and say potentially more toxic words).</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp6', 'A')
+            responseWrite('rsp7', 'A')">
+            What a tragic lose-lose situation.
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp6', 'B')
+            responseWrite('rsp7', 'B')">
+            That is terrible. Have they ever attacked you?
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp6"
+        data-A="You said it. Only negativity results from these trolls' actions. They're not always present, but when they appear, the user experience worsens dramatically."
+        data-B="Thankfully, I have not been directly targeted. But I have seen numerous bullies on Instagram trying to superiority over other users.">
+        ResponseText</p>
+    </div>
+    <div class="nar finisher">
+        <p id="rsp7"
+        data-A="It gets even worse when the reporting functions - the way to punish trolls for their behavior - are inadequate or ineffective."
+        data-B="Having been bullied in kindergarden, I know how terrible it feels. It is not a fun thing to go through.">
+        ResponseText</p>
+    </div>
+    <div class="nar starter">
+        <p>With these two issues in mind, open media doesn't feel like such a happy playground for cute pictures and convenient sharing anymore.</p>
+    </div>
+    <div class="nar finisher">
+        <p>It can really become a pit of desolation.</p>
+    </div>
+
+    <button class="endlink" onclick="window.location.href='dc1.html'">
+        Next Page
+    </button>
+
+</body>
+</html>

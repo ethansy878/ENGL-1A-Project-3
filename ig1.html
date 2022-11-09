@@ -12,8 +12,10 @@
         <h1 id="title">page 2</h1>
     </div>
     <br>
-    <!-- "nar" class = narrator, "res" class = response -->
+    <script src="functions.js"></script>
 
+
+    <!-- "nar" class = narrator, "res" class = response -->
     <div class="nar starter">
         <p>The first app we'll look at today is Instagram.</p> 
     </div>
@@ -22,42 +24,63 @@
     </div>
 
     <div class="res">
-        <button class="response one" data-rspNum="1" data-rspTyp="A">Yes!</button>
+        <button onclick="
+            responseWrite('rsp1', 'A')">
+            Yes!
+        </button>
         <br>
-        <button class="response one" data-rspNum="1" data-rspTyp="B">Insta-what?</button>
+        <button onclick="
+            responseWrite('rsp1', 'B')">
+            Insta-what?
+        </button>
     </div>
 
     <div class="nar starter">
-        <p>PlaceholderResponse</p> 
+        <p id="rsp1"
+        data-A="Cool! I'll be honest, I kind of expected that. With billions of registered users on the app, chances are that any person you meet will have at least one account."
+        data-B="Insta-<i>gram</i>. Let me give you a quick overview about the app. <br> <img src='images/placeholder.png'>">
+        ResponseText</p> 
     </div>
     <div class="nar">
-        <p>PlaceholderResponse</p> 
+        <p>Nowadays, Instagram is an app essential to many people's lives lives.</p> 
     </div>
 
     <div class="nar">
-        <p>Here are some key features and purposes of the app:</p> 
+        <p>Here are some reasons for that:</p> 
     </div>
     <div class="nar finisher">
-        <img src=""> 
+        <img src="images/placeholderVid.png"> 
     </div>
 
     <div class="res">
-        <button>Wow, that's quite convenient!</button>
+        <button onclick="
+            responseWrite('rsp2', 'A')">
+            Wow! This app sounds convenient and full of possibilities!
+        </button>
         <br>
-        <button>That isn't very appealing to me.</button>
+        <button onclick="
+            responseWrite('rsp2', 'B')">
+            That isn't very appealing to me.
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp2', 'C')">
+            All of this is great, but there's a catch, isn't there?
+        </button>
     </div>
     
     <div class="nar starter">
-        <p>PlaceholderResponse</p> 
-    </div>
-    <div class="nar">
-        <p>PlaceholderResponse</p> 
+        <p id="rsp2"
+        data-A="I agree! Personally, I joined in the summer of 2022 when I finally departed for college. The ability to easily connect with friends, see what they were up to, and stay in the loop is fantastic indeed. However, this only scratches the surface."
+        data-B="That's okay. When I was younger, up until around high school, I thought the same thing. It's important to be aware of the app and its influence, though."
+        data-C="You're a step ahead! That's precisely what's going on with this app.">
+        ResponseText</p> 
     </div>
     <div class="nar finisher">
         <p>As we'll see, there's trouble hidden beneath the positive features being marketed here.</p> 
     </div>
 
-    <button class="endlink" onclick="window.location.href='ig1.html'">
+    <button class="endlink" onclick="window.location.href='ig2.html'">
         Next Page
     </button>
 

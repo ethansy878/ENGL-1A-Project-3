@@ -1,4 +1,13 @@
+// function to write into narration box based on what user clicks in response box
+function responseWrite(txtID, type) {
+  element = document.getElementById(txtID);
+  element.innerHTML = element.getAttribute('data-' + type);
+}
 
+// function to switch themes by managing local storage
+function themeSwitch() {
+  console.log("WIP");
+}
 
 /* IMPORTANT: YOU WILL USE THIS FOR FADE IN SCROLLING
 HTML syntax

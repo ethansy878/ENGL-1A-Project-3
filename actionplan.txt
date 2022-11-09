@@ -21,3 +21,8 @@ Links at the bottom of each page for those who want to progress linearly.
 Make it look good, but no need to go over the top! Cozy feel, good font, nice colors.
 
 "INFINITY FREE" FOR SERVER HOSTING: https://www.infinityfree.net/
+
+===========================
+
+To stop images from popping out use "width: 100%;" style.
+Force the horizontal not to be longer than that box

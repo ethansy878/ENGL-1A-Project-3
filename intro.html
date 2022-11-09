@@ -12,21 +12,10 @@
         <h1 id="title">page 1</h1>
     </div>
     <br>
+    <script src="functions.js"></script>
+    
+    
     <!-- "nar" class = narrator, "res" class = response -->
-
-    <script>
-        // function to write into narration box based on what user clicks in response box
-        function responseWrite(txtID, type){
-            element = document.getElementById(txtID);
-            element.innerHTML = element.getAttribute('data-' + type);
-        }
-
-        // function to switch themes by managing local storage
-        function themeSwitch(){
-            console.log("WIP");
-        }
-    </script>
-
     <div class="nar starter">
         <p>Hey there!</p>
     </div>
@@ -58,7 +47,7 @@
     </div>
     <div class="nar finisher">
         <p id="rsp2"
-        data-A="Here's some quick info about me! <img src='/images/placeholder.png'>"
+        data-A="Here's some quick info about me! <br><br> <img src='/images/placeholder.png'>"
         data-B="Very briefly: I am a current college student, I'm  majoring in Computer Science and Engineering, and I like all things technology.">
             ResponseText
         </p> 

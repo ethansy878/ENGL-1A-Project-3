@@ -55,6 +55,12 @@ h3 {
     font-size: larger;
 }
 
+/* Padding for images */
+
+img {
+    padding: 10px;
+}
+
 /* Narrator - the tour guide/page talking, div objects with mainly text */
 .nar {
     font-family: Arial, Helvetica, sans-serif;
