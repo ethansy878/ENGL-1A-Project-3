@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="section-container">
-        <h1 id="title">page4</h1>
+        <h1 id="title">page 4</h1>
     </div>
     <br>
     <script src="functions.js"></script>
@@ -17,33 +17,68 @@
 
     <!-- "nar" class = narrator, "res" class = response -->
     <div class="nar starter">
-        <p>NarrationText</p>
+        <p>The second app we'll look at today is Discord.</p>
     </div>
     <div class="nar finisher">
-        <p>NarrationText</p>
+        <p>Have you heard of this one before?</p>
     </div>
 
     <div class="res">
         <button onclick="
             responseWrite('rsp1', 'A')">
-            Button.
+            I'm familiar with it!
         </button>
         <br>
         <button onclick="
         responseWrite('rsp1', 'B')">
-            Button?
+            That app doesn't sound very nice. Pun intended.
         </button>
     </div>
     
     <div class="nar starter">
         <p id="rsp1" 
-        data-A="Hey" 
-        data-B="LOL">
+        data-A="Awesome. If you're like me, you appreciate its features and structure, and might spend a little too much time on there." 
+        data-B="No, it's not a discord, it's <i>Discord</i>. It's an app that grew in popularity recently, especially among friend groups and online communities.">
             ResponseText
     </p> 
     </div>
+    <div class="nar finisher">
+        <p>This image perfectly sums up what the app has to offer. <br><img src="/images/placeholder.png"></p>
+    </div>
 
-    <button class="endlink" onclick="window.location.href='somepage.html'">
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp2', 'A')">
+            These features look just as cool as Instagram's!".
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp2', 'B')">
+            Now this is more my style of chatting.
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp2', 'C')">
+            Sorry, that doesn't intrigue me.
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp2" 
+        data-A="You seem to be a social media enthusiast! Regardless, yes, it can be a wonderful for communicating with a close friend group." 
+        data-B="You prefer these smaller conversations? Me too, I prefer  to chat in small groups and direct messages. Something about them feels more engaging than the huge audience of Instagram."
+        data-C="Ah, ok. Different tastes in social media are perfectly normal.">
+            ResponseText
+    </p> 
+    </div>
+    <div class="nar">
+        <p>Still, we must discuss what lies beneath the surface. </p>
+    </div>
+    <div class="nar finisher">
+        <p>Amidst all its offerings, Discord has issues of its own. </p>
+    </div>
+
+    <button class="endlink" onclick="window.location.href='dc2.html'">
         Next Page
     </button>
 
