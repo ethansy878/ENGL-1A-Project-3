@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>??? | Open and Closed Media</title>
+</head>
+<body>
+    <div id="section-container">
+        <h1 id="title">???</h1>
+    </div>
+    <br>
+    <script src="functions.js"></script>
+
+
+    <!-- "nar" class = narrator, "res" class = response -->
+    <div class="nar starter">
+        <p>NarrationText</p>
+    </div>
+    <div class="nar finisher">
+        <p>NarrationText</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp1', 'A')">
+            Button.
+        </button>
+        <br>
+        <button onclick="
+        responseWrite('rsp1', 'B')">
+            Button?
+        </button>
+    </div>
+    
+    <div class="nar starter">
+        <p id="rsp1" 
+        data-A="Hey" 
+        data-B="LOL">
+            ResponseText
+        </p> 
+    </div>
+
+    <button class="endlink" onclick="window.location.href='somepage.html'">
+        Next Page
+    </button>
+
+</body>
+</html>

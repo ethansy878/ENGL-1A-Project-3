@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>??? | Open and Closed Media</title>
+    <title>The Solution and its Barriers | Open and Closed Media</title>
 </head>
 <body>
     <div id="section-container">
@@ -16,34 +16,133 @@
 
 
     <!-- "nar" class = narrator, "res" class = response -->
-    <div class="nar starter">
-        <p>NarrationText</p>
-    </div>
-    <div class="nar finisher">
-        <p>NarrationText</p>
+    <div class="nar starter finisher">
+        <p>We see these problems and cringe at them. But all is not lost.</p>
     </div>
 
     <div class="res">
         <button onclick="
             responseWrite('rsp1', 'A')">
-            Button.
+            Yay!
         </button>
         <br>
         <button onclick="
         responseWrite('rsp1', 'B')">
-            Button?
+            There's a positive side to all this?
         </button>
     </div>
     
     <div class="nar starter">
         <p id="rsp1" 
-        data-A="Hey" 
-        data-B="LOL">
+        data-A="Your optimism is wonderful. Let's discuss the two ways we can mitigate these issues. " 
+        data-B="Yes there is! It involves a two-part approach. ">
+            ResponseText
+        </p> 
+    </div>
+    <div class="nar">
+        <p>First, we must see how each app's problems interact with the other app.</p>
+    </div>
+    <div class="nar">
+        <p>Remember what we've discussed.</p>
+    </div>
+    <div class="nar finisher">
+        <img src="/images/placeholder.png"> <p>Pros Cons summary graphic</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp2', 'A')">
+            They look like complimentary apps.
+        </button>
+        <br>
+        <button onclick="
+        responseWrite('rsp2', 'B')">
+            The pros and cons nullify each other!
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp2" 
+        data-A="That is one way to put it. Issues on one can be helped by features from the other, and vice versa." 
+        data-B="That's the word! A problem on one app can be nullified by proper usage of the other.">
+            ResponseText
+        </p> 
+    </div>
+    <div class="nar">
+        <p>So, how about we balance our social media usage between open and closed media?</p>
+    </div>
+    <div class="nar">
+        <p>Open up to the world on Instagram, build stronger connections on Discord.</p>
+    </div>
+    <div class="nar">
+        <p>Let the algorithms promote discovery, and let messaging remain reliable.</p>
+    </div>
+    <div class="nar finisher">
+        <p>Public here, private there.</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp3', 'A')">
+            Sounds like a good plan to me!
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp3', 'B')">
+            What about some of the other cons?
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp3" 
+        data-A="Doing this should yield some better results! There is one more thing to address, though." 
+        data-B="Aha, you remembered them. Don't worry, this is where the second strategy comes into play.">
+            ResponseText
+        </p> 
+    </div>
+    <div class="nar">
+        <p>We will also want to balance the time we spend on social media in general.</p>
+    </div>
+    <div class="nar">
+        <p>Optimally, we optimze our time spent so we get what we need and get out of there.</p>
+    </div>
+    <div class="nar">
+        <p>This helps break our reliance on the app, easing any compulsions we may have toward notifications.</p>
+    </div>
+    <div class="nar">
+        <p>Also, the less time you're online, the less chances bullies get to ruin your day.</p>
+    </div>
+    <div class="nar finisher">
+        <p>Log in, get what you need, and leave before it gets worse.</p>
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp4', 'A')">
+            Genius!
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp4', 'B')">
+            Easier said than done, but I see the benefits.
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp4', 'C')">
+            All this is great, but I can't put it into action!
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp4" 
+        data-A="I appreciate your support for my proposals. But, sadly,  implementing them is a different story." 
+        data-B="Well, easier said than done is an understatement. It's more like 'impossible to execute'. Let's see why."
+        data-C="I sympathize with you. It is, believe it or not, designed to be that way. Time to explore why.">
             ResponseText
         </p> 
     </div>
 
-    <button class="endlink" onclick="window.location.href='somepage.html'">
+    <button class="endlink" onclick="window.location.href='both2.html'">
         Next Page
     </button>
 
