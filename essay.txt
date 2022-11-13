@@ -1,0 +1,199 @@
+Sychangco 1
+This essay, “Open and Closed Media: Instagram, Discord, and a Delicate Balance”, takes
+a deep dive into open and closed media. In it, I use two apps I am familiar with - Instagram and
+Discord - to define and represent both sides. The benefits and negatives of each social media
+type are analyzed, as are how users interact with the media and how users are affected
+emotionally. I wrote the essay in a way that interweaves both directions of technological impact
+into an optimistic, encouraging argument. The argument culminates in a direct, straightforward
+proposal for the social media companies. This proposal is mainly directed toward Instagram’s
+parent company Meta, and within the essay I tried to remain as neutral as possible to not anger
+any company employees that could be reading my essay. I believe my genuine anecdotes, factual
+analysis, and main message that is akin to a call to action make this essay a cohesive, powerful
+critique of social media.
+Sychangco 2
+Ethan Sychangco
+Professor Coad
+English 1A: CTW 1
+4 Nov 2022
+Open and Closed Media: Instagram, Discord, and a Delicate Balance
+From the comfort of their screen, a person can communicate with billions of registered
+users right this moment. That is a staggering amount more than a person can talk to in a typical
+face-to-face conversation. The ability to talk with such an enormous audience was once
+considered impossible, but it is now a reality thanks to social media applications. As a current
+college student, I am riding the social media wave lightly. After being an avid text messenger
+and Discord user for several years, I recently signed up for an Instagram account. When I signed
+up, though, I realized how different it was from the direct messages I was used to.
+I divide social media into two distinct structures: open media and closed media. Open
+media involves user content intended to be seen by the entire world or a wide audience, with
+defining apps like Twitter, TikTok, and recently Instagram for me. By contrast, closed media is
+defined by user content intended for a select audience - as small as a single person - and this is
+where texts, emails, and my favorite messaging app, Discord, are categorized. Each app employs
+its own psychological tactics to keep people glued to their screens, and open media is arguably
+the worst offender. However, getting users addicted is not the only thing these apps do. When
+used excessively and separately, the human mind is bound to suffer from social media. But when
+a delicate balance is made between both categories, open and closed media can actually work
+together to augment a person’s life. To make this balance attainable, social media companies
+Sychangco 3
+need to change their development methods, placing users first and letting them strike the delicate
+balance necessary for healthy social media usage.
+Likes, views, followers, friends, and subscribers are only some of the defining
+mainstream terms of open media. Dozens of apps have characterized this category since the
+dawn of the internet, and currently I best associate open media with Instagram. It is an app with a
+design similar to other “social networking sites or services (SNS)... [platforms] used to build and
+maintain social relations among people who share interests, activities, backgrounds, or real-life
+connections” (Khan). At face value, this service appears full of convenience and opportunity. I
+can make one public post to easily keep loved ones informed and spark interaction with my
+distant friends. The focus on publicity also allows for incredible statistics, and some Instagram
+superstars have built entire careers from millions of followers. Even the ill have reason to join, as
+“patients can join virtual communities, participate in research, receive financial or moral support,
+set goals, and track personal progress” (Ventola). Instagram and open media apps have many
+practical uses, with something available for almost everyone in the world. Unfortunately, though,
+not everyone follows the positive path painted by these apps’ marketers. Whether intentionally or
+subconsciously, we are playing by developers’ numbers and falling into trolls’ traps.
+More often than not, using open media is like fighting an uphill battle against its inner
+systems and adverse audiences. First, the algorithms. Behind the scenes, developers engineer
+these complex programs that completely govern how we consume and post on social media.
+They are, for example, why “you only see a portion of your friends’ posts on your… [social
+media] Feed” (Wachter-Boettcher 144). Regardless of how casually or seriously a user treats
+open media, they must deal with the algorithm to have their posts seen by the right people. On
+several occasions, I have felt out of the loop after not seeing my friend’s Instagram post; I
+Sychangco 4
+thought of where it should have appeared, and in its place was a strange workout advertisement
+chosen by the algorithm. Eventually, after enough instances of improper posts, open media starts
+feeling like a losing battle against an unbeatable artificial intelligence. This negative experience
+is far from healthy, especially when it compounds on the emotional pain that not-so-nice users
+bring. Scattered around open media’s expansive audience are toxic trolls that users are exposed
+to and must defend against. Trolls are people who intentionally try to hurt others’ feelings online,
+saying terrible things that range from “rape and death threats to suggestions of suicide to…
+telling a woman, ‘I would love to knock you… out’” (Wachter-Boettcher 148). Though I haven’t
+been a victim yet, I have seen trolls in action on several open media apps, including once on
+Instagram. I also know, from confronting a bully in elementary school, that toxicity strikes deep
+in the mind. When confronted by trolls, users can either ignore them and hurt their self-esteem,
+or question everything to fight back. But words of defense, fueled by emotion in the moment,
+can take the form of one-liners and insults that are just as toxic, further worsening the mood.
+Open media, marketed as a convenient way to reach billions of people, sometimes feels like a pit
+of desolation when its negatives are considered.
+Constant pressure from algorithms and toxic users can be too much to handle for some
+people, and this is where closed media comes in. Emails, text messages, and my preferred app
+Discord, which combines a system similar to IRC (internet relay chat) with VOIP (voice over
+internet), are the exact opposite of open media. Messages to others are confidential by default,
+and the latter app is quite the powerful suite: “Discord gives you the power to create an
+invite-only home for your friends or community - a place where you can talk, hang out, and have
+fun.” (Librarian). With its focus on small conversations for select people, closed media seems to
+be a perfect haven for productive, reliable, and even professional chatting. I know who I am
+Sychangco 5
+talking to in most chats, there is no algorithm rolling dice on message visibility, and it is easier to
+keep trolls out of my server when they must be explicitly invited. They can also be a fantastic
+way to build communications foundations, as formal messaging in particular requires
+consideration of the recipient, word choice, and more. There are several positives linked to
+virtual conversations, however exclusivity doesn’t prevent other issues from arising.
+Closed media disrespects our privacy in its own flashy way, and it builds relationships
+that can come crashing down painfully. One particularly problematic issue is push notifications,
+which attempt to alert people about events in real time. Often, notifications are initially set to
+intrusive default settings (such as “notify me for every new message”) and it is difficult to tune
+them to our liking because “finding out what [settings] you were agreeing to took extra clicks…
+[into] complicated privacy settings” (Wachter-Boettcher 109). Most people find traversing menus
+filled with dozens or even hundreds of options a great hassle. Overwhelmed and discouraged,
+they end up not interacting with the settings at all. As a result, the app is free to flood users with
+constant alerts, continuously reminding and pressuring them to return to their virtual
+conversation. I have experienced this on Discord, where each message from an active friend
+group server caused my phone to buzz and light up, severely crippling my ability to focus. While
+disruptive notifications are fixable with some knowledge and button presses, such as how I made
+Discord quiet down after some research, it is not the only problem. Closed media also fosters a
+mindset that is often reluctant to meet new people, which can come back to haunt them. I
+personally dread texting the wrong number, emailing the wrong address, and introducing myself
+to a group that has already established who’s friends with whom. Such emotions are real
+motivators that encourage me to chat only with the few people I know well. This is great for
+developing the aforementioned communication skills, but a liability for the future. Two years
+Sychangco 6
+ago, on Discord again, I was a victim of “ghosting”, an act where “someone cuts off all online
+communication with someone else, and without an explanation. Instead, like a ghost, they just
+vanish” (Dubar). The person who did this was a close online friend, and after being ghosted by
+him, I felt an emotional void for several days. The stronger the relationship, the harder it falls,
+and because communication on closed media revolves around strong relationships, the emotional
+void from a severed Discord friendship can last agonizingly long. In this situation, if I did not
+have any additional friends to cheer me up, I would have been in a terrible state of mind for far
+too long. Together, closed media’s notification functions and encouraged behaviors prove to be
+problematic for users, a strikingly similar trend to its open counterpart.
+If both open and closed media appear to be full of despair and hatred, the optimal strategy
+would be to completely distance oneself from it. But that isn’t possible anymore because of
+social media’s enormous reach and relevance: “in 2020, there are an estimated 3.8 billion social
+media users worldwide, representing half the global population” (Naslund). Disconnection is not
+an option because of everyday reliance on social media. So, users must find a way to stay online
+while dealing with the problems. Many of the issues mentioned can be mitigated in two ways:
+using both types of social media together, and spending less time online overall. For example, I
+can sharpen my conversational skills by respectfully talking to Discord users and simultaneously
+open up to the world on Instagram. The algorithms of open media foster discovery, while closed
+messaging provides reliability in communication. Time spent on social media is also a significant
+factor in its impact. The less time I spend online, the fewer chances online bullies and distracting
+notifications have to affect my mind. Altogether, the best strategy is to strike a delicate balance
+between open versus closed media and excessive versus minute usage. Together, it becomes
+Sychangco 7
+harder for social media to throw users into despair because its specific flaws are counterbalanced
+and its time-based tricks can’t keep up.
+Spreading moderate attention over multiple apps is an excellent habit to build up, but tech
+companies for open media disagree. They make their apps as addictive as possible, refusing to
+resolve predatory design choices so that they can further two particular business agendas. First,
+developers strive to increase “daily active users (DAUs) and monthly active users (MAUs)
+because the more often users return... the happier those designers’ bosses (and their companies’
+investors) are” (Wachter-Boettcher 74). Business-wise, these acronyms mean so much, and
+companies often strive to make these statistics rise at all costs. Instagram’s parent company,
+Meta, prides themselves on their massive user base that logs in daily and keeps on scrolling.
+Even though they obtained their audience chiefly through algorithmic manipulation and time
+sinking features, like the endless videos of “Reels”, they still focus on and feel proud of their
+numbers. By keeping users online, Meta can proceed with their next agenda, where they keep
+users “clicking and tapping... while, just outside the screen, they flout regulations, steal data, and
+keep oppressive systems intact” (Wachter-Boettcher 99). They have a clear focus: data, profit,
+and self-fulfillment. Meta and related companies repeatedly disregard end users, instead focusing
+on gathering valuable digital items that push them up in the business world. The unrelenting
+focus on company growth is the root of many previously mentioned design problems. If this
+focus were eliminated, exiting an app may not prove to be as difficult.
+Fortunately for open media developers, there is a way to rid apps of these wrongdoings:
+following closed media’s footsteps. The best example by far is the company Slack, which creates
+a messaging service similar to Discord for business and “asks [their] designers to close their eyes
+and imagine what a person might have experienced in their life before sitting down at their desk”
+Sychangco 8
+(Wachter-Boettcher 190). This caring mentality propelled Slack to great success, and other
+companies, including Discord, have started to engage in similar behavior. After Discord changed
+their logo and color scheme, I found the company constantly doubling down on developing
+functions that help users create the perfect home for their friends. Improved notification settings,
+Nitro’s reasonable premium service, and strong community server tools demonstrate their
+commitment for their users. Afterward, just like Slack, they only continued to grow and grow. It
+seems so simple to focus on user friendliness, but recent history shows that it is the optimal path
+toward both happy users and solid business.
+The best course of action for any person looking to involve themselves with social media
+is to invest equally in open and closed media. Connect with the wider audience on Instagram
+while staying close to a tightly-knit Discord server, as I did. Each app and category has its flaws,
+some worse than others, but if people can balance their usage, then social media apps can
+become essential parts of people’s lives. Right now, it is difficult to make this balance because
+several companies, especially developers of open media like Meta, are trying to keep users
+online as long as possible. This must stop. Their new strategy should be to place users over
+profits, doing so via helpful design choices free from unscrupulous intent. This change in belief
+has been demonstrated before; it can be as simple as Discord’s journey, in which the company
+got inspired then focused their efforts accordingly. When this occurs, when developers
+consistently focus on their users with genuine efforts to make social media functional and
+effective, benefits will blossom. Along with the steady, reliable business growth that honest
+methods invoke, the best value will come to the people. When social media companies prioritize
+the user experience, people will have the opportunity to strike the delicate balance of social
+media usage, thereby allowing them to become healthy users of open and closed media.
+Sychangco 9
+Works Cited
+Dubar, Royette. “When Texts Suddenly Stop: Why People Ghost on Social Media.” The
+Conversation, 16 June 2022,
+theconversation.com/when-texts-suddenly-stop-why-people-ghost-on-social-media-1719
+32.
+Househ, Mowafa, et al. “Empowering Patients through Social Media: The Benefits and
+Challenges.” Sage Journals, 18 Feb. 2014,
+journals.sagepub.com/doi/10.1177/1460458213476969.
+Khan, Gohar Feroz, et al. “Social Media Risks and Benefits: A Public Sector Perspective.” Sage
+Journals, 30 Mar. 2014, journals.sagepub.com/doi/full/10.1177/0894439314524701.
+Librarian. “Beginner's Guide to Discord.” Discord Support, May 2022,
+support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord.
+Naslund, John A., et al. “Social Media and Mental Health: Benefits, Risks, and Opportunities for
+Research and Practice.” SpringerLink, Springer International Publishing, 20 Apr. 2020,
+link.springer.com/article/10.1007/s41347-020-00134-x.
+Wachter-Boettcher, Sara. Technically Wrong: Sexist Apps, Biased Algorithms, and Other Threats
+of Toxic Tech. W.W. Norton & Company, Inc., 2018.
+Ventola, C. Lee. “Social Media and Health Care Professionals: Benefits, Risks, and Best
+Practices.” PubMed Central, Pharmacy and Therapeutics (P & T), July 2014,
+www.ncbi.nlm.nih.gov/pmc/articles/PMC4103576/.

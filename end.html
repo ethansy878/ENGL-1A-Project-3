@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conclusion | Open and Closed Media</title>
+</head>
+<body>
+    <div id="section-container">
+        <h1 id="title">???</h1>
+    </div>
+    <br>
+    <script src="functions.js"></script>
+
+
+    <!-- "nar" class = narrator, "res" class = response -->
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp1', 'A')">
+            Wow, well said. Thank you for this conversation!
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp1', 'B')">
+            Cool chat. I liked it quite a bit.
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp1', 'C')">
+            If that's all, I've got some comments to share.
+        </button>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp1" 
+        data-A="Thank <i>you!</i> You made this conversation much more lively." 
+        data-B="Appreciate it a lot. I hope it gave you a new perspective into these vital apps."
+        data-C="Ooh, ok. I hope our chat was still somewhat interesting to you.">
+            ResponseText
+        </p> 
+    </div>
+    <div class="nar">
+        <p id="rsp1" 
+        data-A="Since you enjoyed it, is there anything you want to tell me?" 
+        data-B="Do you have anything you'd like to share with me?"
+        data-C="Just to confirm: open the feedback text box?">
+            ResponseText
+        </p> 
+    </div>
+
+    <div class="res">
+        <button onclick="
+            responseWrite('rsp2', 'A')">
+            <!--openFeedbackFunction-->
+            Yes, please.
+        </button>
+        <br>
+        <button onclick="
+            responseWrite('rsp2', 'B')">
+            No thanks.
+        </button>
+    </div>
+    
+    <div class="nar starter">
+        <p id="rsp2" 
+        data-A="Alright, have at it."
+        data-B="If that's the case, thank you once again for having this chat.">
+            ResponseText
+        </p> 
+    </div>
+
+    <!--Feedback box, only open if they responded so. It will post to the logs.txt file-->
+    <div class="res">
+        <p>Work in progress</p>
+    </div>
+
+    <div class="nar starter">
+        <p id="rsp2" 
+        data-A="Wonderful, thank you. All feedback is valuable, so thank you for sharing your thoughts."
+        data-B="I am glad I could give you some exposure to these important issues.">
+            ResponseText
+        </p> 
+    </div>
+    <div class="nar">
+        <p>No matter if this chat resonated with you or not, this is an important topic in a rapidly advancing digital age.</p>
+    </div>
+    <div class="nar">
+        <p>Remember to always support user-friendly developers and companies commited to their users.</p>
+    </div>
+    <div class="nar">
+        <p>They are how we get closer to our ultimate goal of becoming healthy social media users. We will have achieved it when, one day...</p>
+    </div>
+    <div class="nar finisher">
+        <p>We have full control to strike the delicate balance between open and closed media.</p>
+    </div>
+
+    <p>The End</p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <nar>Works Cited</nar>
+
+    <button class="endlink" onclick="window.location.href='both3.html'">
+        Previous Page
+    </button>
+</body>
+</html>
