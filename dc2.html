@@ -16,16 +16,14 @@
 
 
     <!-- "nar" class = narrator, "res" class = response -->
-    <div class="nar starter finisher">
+    <div class="item nar starter">
         <p>I'll start with something you probably heard in public and felt annoyed by.</p>
     </div>
-    <script>
-        
-    </script>
+    <div class="item nar finisher">
+        <audio controls><source src="audios/ping.mp3"></audio>
+    </div>
 
-    <script>playAudio("delay", null)</script>
-
-    <div class="res">
+    <div class="item res">
         <button onclick="
             responseWrite('rsp1', 'A')
             responseWrite('rsp2', 'A')">
@@ -39,14 +37,14 @@
         </button>
     </div>
     
-    <div class="nar starter">
+    <div class="item nar starter">
         <p id="rsp1" 
         data-A="This is the sound Discord plays to notify you of a new message." 
         data-B="You already know it! You also already feel annoyance rushing through you.">
             ResponseText
         </p> 
     </div>
-    <div class="nar finisher">
+    <div class="item nar finisher">
         <p id="rsp2" 
         data-A="One of them doesn't sound too bad. But suppose you were in the following situations:" 
         data-B="Even if you can handle one ping, I'm sure it only gets worse when you are a part of the following:">
@@ -54,7 +52,7 @@
         </p> 
     </div>
 
-    <div class="res">
+    <div class="item res">
         <form>
             <input type="checkbox" id="scenario1" name="scenario1" value="Bike">
             <label for="vehicle1"> My friends message me in direct messages.</label><br>
@@ -71,7 +69,7 @@
           
     </div>
 
-    <div class="nar starter finisher">
+    <div class="item nar starter finisher">
         <p id="rspS" 
         data-A="Even with no explicit connections, randoms and scammers still find ways to ping you." 
         data-B="Not so tolerable now.">
@@ -79,7 +77,7 @@
         </p> 
     </div>
 
-    <div class="res">
+    <div class="item res">
         <button onclick="
             responseWrite('rsp3', 'A')
             responseWrite('rsp4', 'A')">
@@ -94,7 +92,7 @@
     </div>
 
     </div>
-    <div class="nar starter">
+    <div class="item nar starter">
         <p id="rsp3" 
         data-A="It's somewhere in the settings. In there, though, you can only shut everything off." 
         data-B="Right? This has happened to me in the past.">
@@ -102,21 +100,21 @@
         </p> 
     </div>
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p id="rsp4" 
         data-A="To mute just the loud spots, you have find the setting in their server. By that point, some users give up from the obscurity." 
         data-B="I couldn't get my work done because an active friend group kept chatting and buzzing my phone. I had to research how to mute them, it wasn't very obvious!">
             ResponseText
         </p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>If you think this is obnoxious, sadly it gets worse again.</p> 
     </div>
-    <div class="nar finisher">
+    <div class="item nar finisher">
         <p>The next issue is one that's very personal to me. I will present you the full story.</p> 
     </div>
 
-    <div class="res">
+    <div class="item res">
         <button onclick="
             responseWrite('rsp5', 'A')">
             Uh oh...
@@ -129,26 +127,26 @@
     </div>
 
     </div>
-    <div class="nar starter">
+    <div class="item nar starter">
         <p id="rsp5" 
         data-A="About two years ago on Discord, I made a close friend completely online. He was friendly and fun to be around. ">
             ResponseText
         </p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>Each day, I strengthed our friendship by chatting and calling on Discord together. The app was our own private space to talk and have fun!</p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>Before long, I looked forward to our calls at the start of each day.</p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>Then...</p> 
     </div>
-    <div class="nar finisher">
+    <div class="item nar finisher">
         <p>He vanished. Randomly, with no trace, he was gone.</p> 
     </div>
 
-    <div class="res">
+    <div class="item res">
         <button onclick="
             responseWrite('rsp6', 'A')">
             How could he?
@@ -160,36 +158,36 @@
         </button>
     </div>
 
-    <div class="nar starter">
+    <div class="item nar starter">
         <p id="rsp6" 
         data-A="I can't explain it! He disappeared like a ghost, and he left no message behind." 
         data-B="Spot-on, that's the perfect word to describe the situation.">
             ResponseText
         </p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>What happened after that? Well,</p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <img src="/images/sad-ghost.png">
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>I was in a horrible state of mind for an entire week.</p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>Friendships: the stronger they are, the harder they fall.</p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>Discord helped me build that friendship to the point that when it ended, it came crashing down.</p> 
     </div>
-    <div class="nar">
+    <div class="item nar">
         <p>Don't worry, I had other friends to ease the situation's sadness. But who knows how troubled I would have been if I lost my only friendship.</p> 
     </div>
-    <div class="nar finisher">
+    <div class="item nar finisher">
         <p>Discord promotes this attitude through its voice and direct message functions. But it can be a huge liability for those that don't forge additional or enough connections.</p> 
     </div>
 
-    <div class="res">
+    <div class="item res">
         <button onclick="
             responseWrite('rsp7', 'A')">
             Now I am scared to make friends, both there and everywhere!
@@ -201,14 +199,14 @@
         </button>
     </div>
 
-    <div class="nar starter">
+    <div class="item nar starter">
         <p id="rsp7" 
         data-A="Somehow, that's the feeling I get form Discord too. It's strange." 
         data-B="Thanks. The dynamic here is so unusual, especially for an introvert like me.">
             ResponseText
         </p> 
     </div>
-    <div class="nar finisher">
+    <div class="item nar finisher">
         <p>Maybe there is some way of balancing Discord's problems here with, say, Instagram's features. Hmmm...</p> 
     </div>
 
