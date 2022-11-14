@@ -9,6 +9,85 @@ function themeSwitch() {
   console.log("WIP");
 }
 
+// function to set the ad in instagram #2 page
+function advertisement(type){
+    let ad = document.getElementById("ad")
+    switch (type) {
+        case 'A':
+            ad.src = "images/pizza-hut-ad.png";
+            break;
+        case 'B':
+            ad.src = "images/iphone-ad.png";
+            break;
+        case 'C':
+            ad.src = "images/workout-ad.png";
+            break;
+    }
+}
+
+// function to set the quote in instagram #2 page
+function quote(type){
+  let ad = document.getElementById("quote")
+  switch (type) {
+      case 'A':
+          ad.src = "images/timmy-quote.png";
+          break;
+      case 'B':
+          ad.src = "images/parent-quote.png";
+          break;
+      case 'C':
+          ad.src = "images/pol-quote.png";
+          break;
+  }
+}
+
+// audio file for discord #2 page
+let audio = new Audio('audios/ping.mp3');
+
+// function that plays the discord audio
+function playAudio(type, count){
+    if (type == "delay") {
+        setTimeout(function(){
+            console.log("Playing sound");
+            audio.play();
+        }, 2000)
+    }
+
+    else if (type == "repeat") {
+        for (let i = 0; i < count * 3; i++) {
+            setTimeout(function(){
+                console.log("Playing sound");
+                audio.play();
+            }, 750 * i)
+        }
+    }
+}
+
+// function that evaluates the responses on discord #2 page
+function evalResponses(){
+    let box1 = document.getElementById("scenario1");
+    let box2 = document.getElementById("scenario2");
+    let box3 = document.getElementById("scenario3");
+
+    let boxArray = [box1, box2, box3];
+    let count = 1;
+    boxArray.forEach(element => {
+        if (element.checked == true) {
+            count++;
+        }
+    });
+
+    if (count == 1){
+      responseWrite('rspS', 'A');
+    }
+    else {
+      responseWrite('rspS', 'B');
+    }
+
+
+    playAudio("repeat", count);
+}
+
 /* IMPORTANT: YOU WILL USE THIS FOR FADE IN SCROLLING
 HTML syntax
 The syntax is simple. Any attribute on any element whose attribute name starts with data- is a data attribute. Say you have an article and you want to store some extra information that doesn't have any visual representation. Just use data attributes for that:

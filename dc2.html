@@ -16,12 +16,14 @@
 
 
     <!-- "nar" class = narrator, "res" class = response -->
-    <div class="nar starter">
+    <div class="nar starter finisher">
         <p>I'll start with something you probably heard in public and felt annoyed by.</p>
     </div>
-    <div class="nar finisher">
-        <p>INSERT DISCORD PING SFX</p>
-    </div>
+    <script>
+        
+    </script>
+
+    <script>playAudio("delay", null)</script>
 
     <div class="res">
         <button onclick="
@@ -40,24 +42,41 @@
     <div class="nar starter">
         <p id="rsp1" 
         data-A="This is the sound Discord plays to notify you of a new message." 
-        data-B="You already know it! You also already feel the annoyance rushing through you.">
+        data-B="You already know it! You also already feel annoyance rushing through you.">
             ResponseText
         </p> 
     </div>
     <div class="nar finisher">
         <p id="rsp2" 
         data-A="One of them doesn't sound too bad. But suppose you were in the following situations:" 
-        data-B="Even if you can handle one, I'm sure it only gets worse when you are a part of the following:">
+        data-B="Even if you can handle one ping, I'm sure it only gets worse when you are a part of the following:">
             ResponseText
         </p> 
     </div>
 
     <div class="res">
-        <form>(Work in progress) Check box items here.</form>
+        <form>
+            <input type="checkbox" id="scenario1" name="scenario1" value="Bike">
+            <label for="vehicle1"> My friends message me in direct messages.</label><br>
+            <input type="checkbox" id="scenario2" name="scenario2" value="Car">
+            <label for="vehicle2"> I have an active group chat in the app.</label><br>
+            <input type="checkbox" id="scenario3" name="scenario3" value="Boat">
+            <label for="vehicle3"> I am a part of a large server with notifications on. </label><br>
+          </form>
+        <button onclick="
+          evalResponses() /*also includes responseWrite*/">
+          Confirm
+      </button>
+
+          
     </div>
 
     <div class="nar starter finisher">
-        <p>(Work in progress) <br> if 1+ boxes checked: Now the pings sound a lot more like this. <br> if 0 boxes checked: You think that will stop the noise? Unfortunately, you can't stop the randoms and scammers that are ever so present. <br>INSERT REPEATED DISCORD PING SFX</p>
+        <p id="rspS" 
+        data-A="Even with no explicit connections, randoms and scammers still find ways to ping you." 
+        data-B="Not so tolerable now.">
+            ResponseText
+        </p> 
     </div>
 
     <div class="res">
@@ -91,7 +110,7 @@
         </p> 
     </div>
     <div class="nar">
-        <p>Obnoxious, right? Well, once again, it gets worse.</p> 
+        <p>If you think this is obnoxious, sadly it gets worse again.</p> 
     </div>
     <div class="nar finisher">
         <p>The next issue is one that's very personal to me. I will present you the full story.</p> 
@@ -125,7 +144,7 @@
     <div class="nar">
         <p>Then...</p> 
     </div>
-    <div class="nar">
+    <div class="nar finisher">
         <p>He vanished. Randomly, with no trace, he was gone.</p> 
     </div>
 

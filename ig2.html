@@ -28,20 +28,17 @@
 
     <div class="res">
         <button onclick="
-            responseWrite('rspNULL', 'A')">
-            <!--advertisement('A')-->
+            advertisement('A')">
             best pizza places
         </button>
         <br>
         <button onclick="
-            responseWrite('rspNULL', 'A')">
-            <!--advertisement('B')-->
+            advertisement('B')">
             new iPhone review
         </button>
         <br>
         <button onclick="
-        responseWrite('rspNULL', 'A')">
-            <!--advertisement('C')-->
+            advertisement('C')">
             quick workout idea
         </button>
         <br>
@@ -51,7 +48,7 @@
         <p>It seems like such a harmless task, searching for information, but-</p> 
     </div>
     <div class="nar">
-        <p>(A Message from our Sponsor) <br> <img src="images/placeholder.png"></p>
+        <p>(A Message from our Sponsor) <br> <img id="ad" src="images/placeholder.png"></p>
     </div>
     <div class="nar finisher">
         <p>...can get in the way of your usage.</p>
@@ -60,14 +57,12 @@
     <div class="res">
         <button onclick="
             responseWrite('rsp1', 'A')">
-            <!--advertisement('A')-->
-                Wait, say that again! You got cut off by a sponsored message!
+            Wait, say that again! You got cut off by a sponsored message!
         </button>
         <br>
         <button onclick="
             responseWrite('rsp1', 'B')">
-            <!--advertisement('B')-->
-                Huh? Why is this on my screen?
+            Huh? Why is this on my screen?
         </button>
     </div>
 
@@ -87,13 +82,11 @@
     <div class="res">
         <button onclick="
             responseWrite('rsp2', 'A')">
-            <!--advertisement('A')-->
             That's so annoying!
         </button>
         <br>
         <button onclick="
             responseWrite('rsp2', 'B')">
-            <!--advertisement('B')-->
             It had to interfere, didn't it?
         </button>
     </div>
@@ -131,25 +124,25 @@
 
     <div class="res">
         <button onclick="
-            responseWrite('rsp4', 'A')">
+            quote('A')">
             Let's see the message from "little.timmy.plays.99".
         </button>
         <br>
         <button onclick="
-            responseWrite('rsp4', 'B')">
+            quote('B')">
             Let's see the message from "thebestparent".
         </button>
         <br>
         <button onclick="
-            responseWrite('rsp4', 'B')">
+            quote('C')">
             Let's see the message from "PoliticianPeter".
         </button>
     </div>
 
     <div class="nar starter">
-        <p>(Work in progress - Different Message based on selection) <br> <img style="width: 100%;" src="images/placeholder.png"></p>
+        <p> <img id="quote" style="width: 100%;" src="images/placeholder.png"></p>
     </div>
-    <div class="nar">
+    <div class="nar finisher">
         <p>Quite heated, right?</p>
     </div>
 
@@ -161,14 +154,14 @@
         <br>
         <button onclick="
             responseWrite('rsp5', 'B')">
-            Heated is an understatement. They're so toxic!
+            Heated is an understatement. That's basically toxicity!
         </button>
     </div>
 
     <div class="nar starter">
         <p id="rsp5"
         data-A="Some people are, unfortunately, like that by nature."
-        data-B="That is the perfect description for this individual.">
+        data-B="Perfect description for this individual.">
         ResponseText</p>
     </div>
     <div class="nar">
