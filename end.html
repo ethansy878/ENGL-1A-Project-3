@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="section-container">
-        <h1 id="title">???</h1>
+        <h1 id="title">conclude</h1>
     </div>
     <br>
     <script src="functions.js"></script>
@@ -18,17 +18,20 @@
     <!-- "nar" class = narrator, "res" class = response -->
     <div class="res">
         <button onclick="
-            responseWrite('rsp1', 'A')">
+            responseWrite('rsp1', 'A')
+            responseWrite('rsp2', 'A')">
             Wow, well said. Thank you for this conversation!
         </button>
         <br>
         <button onclick="
-            responseWrite('rsp1', 'B')">
+            responseWrite('rsp1', 'B')
+            responseWrite('rsp2', 'B')">
             Cool chat. I liked it quite a bit.
         </button>
         <br>
         <button onclick="
-            responseWrite('rsp1', 'C')">
+            responseWrite('rsp1', 'C')
+            responseWrite('rsp2', 'C')">
             If that's all, I've got some comments to share.
         </button>
     </div>
@@ -42,7 +45,7 @@
         </p> 
     </div>
     <div class="nar">
-        <p id="rsp1" 
+        <p id="rsp2" 
         data-A="Since you enjoyed it, is there anything you want to tell me?" 
         data-B="Do you have anything you'd like to share with me?"
         data-C="Just to confirm: open the feedback text box?">
@@ -52,19 +55,21 @@
 
     <div class="res">
         <button onclick="
-            responseWrite('rsp2', 'A')">
+            responseWrite('rsp3', 'A')
+            responseWrite('rsp4', 'A')">
             <!--openFeedbackFunction-->
             Yes, please.
         </button>
         <br>
         <button onclick="
-            responseWrite('rsp2', 'B')">
+            responseWrite('rsp3', 'B')
+            responseWrite('rsp4', 'A')">
             No thanks.
         </button>
     </div>
     
     <div class="nar starter">
-        <p id="rsp2" 
+        <p id="rsp3" 
         data-A="Alright, have at it."
         data-B="If that's the case, thank you once again for having this chat.">
             ResponseText
@@ -76,14 +81,14 @@
         <p>Work in progress</p>
     </div>
 
-    <div class="nar starter">
-        <p id="rsp2" 
+    <div class="nar starter finisher">
+        <p id="rsp4" 
         data-A="Wonderful, thank you. All feedback is valuable, so thank you for sharing your thoughts."
         data-B="I am glad I could give you some exposure to these important issues.">
             ResponseText
         </p> 
     </div>
-    <div class="nar">
+    <div class="nar starter">
         <p>No matter if this chat resonated with you or not, this is an important topic in a rapidly advancing digital age.</p>
     </div>
     <div class="nar">
@@ -93,14 +98,18 @@
         <p>They are how we get closer to our ultimate goal of becoming healthy social media users. We will have achieved it when, one day...</p>
     </div>
     <div class="nar finisher">
-        <p>We have full control to strike the delicate balance between open and closed media.</p>
+        <p>...we have full control to strike the delicate balance between open and closed media.</p>
     </div>
 
-    <p>The End</p>
-
+    <div class="nar finisher">
+        <p>The End</p>
+    </div>
+    
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <nar>Works Cited</nar>
+    <div class="nar finisher">
+        <p>Works Cited</p>
+    </div>
 
     <button class="endlink" onclick="window.location.href='both3.html'">
         Previous Page

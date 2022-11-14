@@ -59,6 +59,8 @@ h3 {
 
 img {
     padding: 10px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /* Narrator - the tour guide/page talking, div objects with mainly text */
@@ -172,11 +174,6 @@ img {
         border-style: solid;*/
     }
 
-    #title-scroll-arrow {
-        height: 50px; 
-        width: 50px;
-    }
-
     /*
     #overview-container {
     }*/
@@ -238,10 +235,12 @@ img {
 
     .cover-arrow {
 
-        position: absolute;
+        position: relative;
         
-        bottom: 20px;
+        bottom: 0px;
         left: 0px;
+        
+        text-align: center;
         
         margin: 0px;
         height: 100px;
