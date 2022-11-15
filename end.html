@@ -9,11 +9,12 @@
 </head>
 <body class="df-theme">
     <div id="section-container">
-        <h1 id="title">conclude</h1>
+        <h1 id="title">Conclusion</h1>
     </div>
     <br>
     <script src="functions.js"></script>
     <script>themeSwitch((themeParse()));</script>
+    <noscript>Warning: JavaScript is DISABLED. The main features of the website will not work!</noscript>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -33,7 +34,7 @@
         <button class="res-but" onclick="
             responseWrite('rsp1', 'C')
             responseWrite('rsp2', 'C')">
-            If that's all, I've got some comments to share.
+            Sounds like you wrapped it up pretty well. Are we finished?
         </button>
     </div>
 
@@ -41,15 +42,15 @@
         <p id="rsp1" 
         data-A="Thank <i>you!</i> You made this conversation much more lively." 
         data-B="Appreciate it a lot. I hope it gave you a new perspective into these vital apps."
-        data-C="Ooh, ok. I hope our chat was still somewhat interesting to you.">
+        data-C="Yes, our chat is coming to a close. ">
             ResponseText
         </p> 
     </div>
     <div class="item nar">
         <p id="rsp2" 
-        data-A="Since you enjoyed it, is there anything you want to tell me?" 
-        data-B="Do you have anything you'd like to share with me?"
-        data-C="Just to confirm: open the feedback text box?">
+        data-A="I hope you enjoyed it as much as I enjoyed expressing my thoughts." 
+        data-B="There was a lot to unpack, but I did my best to deliver it clearly to you."
+        data-C="Regardless if you enjoyed it or not, I still thank you for having this discussion with me.">
             ResponseText
         </p> 
     </div>
@@ -58,42 +59,36 @@
         <button class="res-but" onclick="
             responseWrite('rsp3', 'A')
             responseWrite('rsp4', 'A')">
-            <!--openFeedbackFunction-->
-            Yes, please.
+            It was fantastic. Great job!
         </button>
         <br>
         <button class="res-but" onclick="
             responseWrite('rsp3', 'B')
             responseWrite('rsp4', 'B')">
-            No thanks.
+            There's room for improvement.
         </button>
     </div>
     
     <div class="item nar starter">
         <p id="rsp3" 
-        data-A="Alright, have at it."
-        data-B="If that's the case, thank you once again for having this chat.">
+        data-A="You're the best."
+        data-B="Indeed there is. We like to keep things positive here.">
             ResponseText
         </p> 
     </div>
 
-    <!--Feedback box, only open if they responded so. It will post to the logs.txt file-->
-    <div class="item res">
-        <p>Work in progress</p>
-    </div>
-
-    <div class="item nar starter finisher">
+    <div class="item nar finisher">
         <p id="rsp4" 
-        data-A="Wonderful, thank you. All feedback is valuable, so thank you for sharing your thoughts."
-        data-B="I am still glad I could give you some exposure to these important issues.">
+        data-A="With enthusiasm like that, I'm sure the problems of social media can be fixed in no time."
+        data-B="Optimism is the view I hold going into the future of social media.">
             ResponseText
         </p> 
     </div>
     <div class="item nar starter">
-        <p>No matter if this chat resonated with you or not, this is an important topic in a rapidly advancing digital age.</p>
+        <p>Let's briefly conclude. No matter if this chat resonated with you or not, this is an important topic in a rapidly advancing digital age.</p>
     </div>
     <div class="item nar">
-        <p>Remember to always support user-friendly developers and companies commited to their users.</p>
+        <p>Always remember to support user-friendly developers and companies commited to their users.</p>
     </div>
     <div class="item nar">
         <p>They are how we get closer to our ultimate goal of becoming healthy social media users. We will have achieved it when, one day...</p>

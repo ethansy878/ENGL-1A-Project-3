@@ -29,8 +29,12 @@
 
     --borderSty: solid;
     --borderCol: var(--constWhite);
+    --borderAll: 2px;
+    --borderTop: 2px;
+    --borderRad: 10px;
 
-
+    --txtSizing: fit-content;
+    --txtMax: 90vw;
     --fontFam: 'Arial';
 }
 
@@ -41,7 +45,12 @@
 
     --borderSty: solid;
     --borderCol: var(--constBlack);
+    --borderAll: 2px;
+    --borderTop: 2px;
+    --borderRad: 10px;
 
+    --txtSizing: fit-content;
+    --txtMax: 90vw;
     --fontFam: 'Calibri';
 
 }
@@ -51,9 +60,15 @@
     --dark: var(--dcD);
     --font: var(--dfF);
 
-    --borderSty: none;
+    --borderSty: solid;
     --borderCol: var(--constBlack);
+    --borderAll: 0px;
+    --borderTop: 4px;
+    --borderRad: 0px;
 
+
+    --txtSizing: "max-content";
+    --txtMax: 100vw;
     --fontFam: 'Lucida Sans';
 }
 
@@ -90,18 +105,18 @@ img {
 }
 
 /* Narrator - the tour guide/page talking, div objects with mainly text */
+
 .nar {
     font-family: var(--fontFam);
     font-style: normal;
     font-size: large;
-
     color: white;
+
     overflow-wrap: break-word;
 
     position: relative;
-
-    width: fit-content;
-    max-width: 90vw;
+    width: var(--txtSizing);
+    max-width: var(--txtMax);
 
     margin: -2px;
     padding: 10px;
@@ -110,10 +125,27 @@ img {
 
     border-style: var(--borderSty);
     border-color: var(--borderCol);
-    border-width: 2px;
-    border-radius: 10px;
+    border-width: var(--borderAll);
+    border-radius: var(--borderRad);
 
     background-color: var(--bright);
+}
+
+/* Specific narrator cases */
+
+.starter {
+    margin-top: 20px;
+    clear: both;
+
+    border-width: var(--borderTop) 
+                  var(--borderAll) 
+                  var(--borderAll) 
+                  var(--borderAll) 
+                  !important;
+}
+
+.finisher {
+    margin-bottom: 20px;
 }
 
 /* Response - where user interacts, div objects with stuff in them */
@@ -121,26 +153,25 @@ img {
     font-family: var(--fontFam);
     font-style: normal;
     font-size: large;
-    
     color: white;
+
     overflow-wrap: break-word;
+    white-space: nowrap;
 
     position: relative;
-
     width: fit-content;
     max-width: 90vw;
+
+    float: right;
 
     margin: -2px;
     margin-bottom: 20px;
     padding: 10px;
 
-    float: right;
-    white-space: nowrap;
-
     border-style: var(--borderSty);
     border-color: var(--borderCol);
-    border-width: 2px;
-    border-radius: 10px;
+    border-width: var(--borderAll);
+    border-radius: var(--borderRad);
 
     background-color: var(--bright);
 }
@@ -150,15 +181,16 @@ img {
     font-family: var(--fontFam);
     font-style: italic;
     font-size: large;
-
     color: white;
+
     overflow-wrap: break-word;
+    white-space: normal;
 
     float: right;
 
     position: relative;
- 
     width: fit-content;
+    max-width: 50vw;
 
     text-align: right;
 
@@ -185,12 +217,11 @@ img {
     font-family: var(--fontFam);
     font-style: italic;
     font-size: large;
-
     color: white;
+
     overflow-wrap: break-word;
 
     position: relative;
-
     width: fit-content;
     max-width: 90vw;
 
@@ -206,15 +237,6 @@ img {
 
 .endlink:hover {
     background-color: var(--constYellow);
-}
-
-.starter {
-    margin-top: 20px;
-    clear: both;
-}
-
-.finisher {
-    margin-bottom: 20px;
 }
 
 
@@ -277,28 +299,32 @@ img {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
     .flex-text {
+        font-family: var(--fontFam);
+        font-weight: bolder;
+        font-size: large;
+        color: var(--constWhite);
+    
         width: 40vw;
+        height: fit-content;
         max-width: 400px;
         max-height: 400px;
 
         margin: 10px;
         margin-right: calc(5px + 1vw);
-        padding: 5px;
+        padding: 15px;
 
-        border-style: solid;
+        border-style: var(--borderSty);
+        border-color: var(--borderCol);
         border-width: 5px;
-        border-radius: 15px;
-        border-color: white;
+        border-radius: 10px;
 
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
-
-        font-size: large;
+        text-align: center;
+        vertical-align: middle;
     }
 
     .flex-img {
@@ -308,12 +334,12 @@ img {
 
         margin: 10px;
         margin-left: calc(5px + 1vw);
-        padding: 5px;
+        padding: 0px;
 
-        border-style: solid;
+        border-style: var(--borderSty);
+        border-color: var(--borderCol);
         border-width: 5px;
-        border-radius: 15px;
-        border-color: white;
+        border-radius: 10px;
     }
 
     .cover-graphic {
