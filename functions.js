@@ -19,7 +19,7 @@ function themeSwitch(type) {
             body.classList.add("dc-theme");
             break;
         default:
-            body.classList.add("dc-theme");
+            body.classList.add("df-theme");
     }
 }
 
