@@ -18,6 +18,8 @@ function themeSwitch(type) {
         case 'dc-theme':
             body.classList.add("dc-theme");
             break;
+        default:
+            body.classList.add("dc-theme");
     }
 }
 
