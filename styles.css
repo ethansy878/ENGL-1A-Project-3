@@ -3,15 +3,15 @@
 :root {
     /* Page Variables Here */
     /* Colors: Type (default, instagram, discord), then Bright, Dark, and Font */
-    --dfB: #cecece;
-    --dfD: #747474;
-    --dfF: #ffffff;
+    --dfB: #999999;
+    --dfD: #666666;
     --igB: #e90f99;
     --igD: #730994;
-    --igF: #e6cbe1;
     --dcB: #5865f2;
     --dcD: #36393f;
-    --dcF: #edeef8;
+    --constWhite: #ffffff;
+    --constYellow: #fff7848f;
+    --constBlack: #000000;
     --grad: linear-gradient(to right, var(--igB), var(--dcB));
     /* <!> --art: */
 }
@@ -21,25 +21,51 @@
 }
 
 
-/* GOTTA FIX THIS THEMING STUF, PROB AFTER ALL CONTENT IS IN */
-body {
-    background: var(--dfD);
-}
-
-/* Themes */
+/* Themes: Default, Instagram, and Discord */
 .df-theme {
-    background-color: var(--dfD)
+    --bright: var(--dfB);
+    --dark: var(--dfD);
+    --fontCol: var(--constWhite);
+
+    --borderSty: solid;
+    --borderCol: var(--constWhite);
+
+
+    --fontFam: 'Arial';
 }
 
 .ig-theme {
-    background-color: var(--igD);
+    --bright: var(--igB);
+    --dark: var(--igD);
+    --font: var(--constWhite);
+
+    --borderSty: solid;
+    --borderCol: var(--constBlack);
+
+    --fontFam: 'Calibri';
+
 }
 
 .dc-theme {
-    background-color: var(--dcD);
+    --bright: var(--dcD);
+    --dark: var(--dcD);
+    --font: var(--dfF);
+
+    --borderSty: none;
+    --borderCol: var(--constBlack);
+
+    --fontFam: 'Lucida Sans';
 }
 
 /* Header customization for opening title */
+
+
+/* GOTTA FIX THIS THEMING STUF, PROB AFTER ALL CONTENT IS IN */
+body {
+    background: var(--dark);
+    border-style: none !important;
+}
+
 h1 {
     font-style: oblique;
     font-size: xx-large;
@@ -65,8 +91,10 @@ img {
 
 /* Narrator - the tour guide/page talking, div objects with mainly text */
 .nar {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontFam);
+    font-style: normal;
     font-size: large;
+
     color: white;
     overflow-wrap: break-word;
 
@@ -80,20 +108,24 @@ img {
     padding-top: 0px;
     padding-bottom: 0px;
 
-    border-style: solid;
-    border-radius: 5px;
+    border-style: var(--borderSty);
+    border-color: var(--borderCol);
     border-width: 2px;
-    border-color: white;
+    border-radius: 10px;
 
-    background-color: darkgray;
+    background-color: var(--bright);
 }
 
 /* Response - where user interacts, div objects with stuff in them */
 .res {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontFam);
+    font-style: normal;
     font-size: large;
+    
     color: white;
     overflow-wrap: break-word;
+
+    position: relative;
 
     width: fit-content;
     max-width: 90vw;
@@ -105,12 +137,75 @@ img {
     float: right;
     white-space: nowrap;
 
-    border-style: solid;
-    border-radius: 5px;
+    border-style: var(--borderSty);
+    border-color: var(--borderCol);
     border-width: 2px;
-    border-color: white;
+    border-radius: 10px;
 
-    background-color: darkgray;
+    background-color: var(--bright);
+}
+
+/* Response buttons */
+.res-but {
+    font-family: var(--fontFam);
+    font-style: italic;
+    font-size: large;
+
+    color: white;
+    overflow-wrap: break-word;
+
+    float: right;
+
+    position: relative;
+ 
+    width: fit-content;
+
+    text-align: right;
+
+    margin: 2px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    border-style: color;
+    border-color: var(--dark);
+    border-width: 0px 0px 2px 0px;
+    border-radius: 5px;
+
+    background-color: var(--bright);
+
+}
+
+.res-but:hover {
+    background-color: var(--constYellow);
+    transition: 0.25s;
+}
+
+.endlink {
+    font-family: var(--fontFam);
+    font-style: italic;
+    font-size: large;
+
+    color: white;
+    overflow-wrap: break-word;
+
+    position: relative;
+
+    width: fit-content;
+    max-width: 90vw;
+
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+
+    border-width: 0px;
+    border-radius: 10px;
+
+    background-color: var(--bright);
+}
+
+.endlink:hover {
+    background-color: var(--constYellow);
 }
 
 .starter {
@@ -264,8 +359,8 @@ img {
         top: 0px;
 
         margin: 0px;
-        padding: 10px;
-        height: calc(25vh);
+        padding: 30px;
+        height: 200px;
 
         border-style: solid;
         border-width: 5px;

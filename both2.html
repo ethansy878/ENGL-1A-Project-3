@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>The Barrier | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
         <h1 id="title">page 7</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -24,12 +25,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A')">
             Are they doing something wrong?
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'B')">
             Yes. They are doing something to hinder our plan.
         </button>
@@ -56,12 +57,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'A')">
             So that's why I'm always scrolling endlessly.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'B')">
             Screen time is bad, but what can they get out of us staying online?
         </button>
@@ -91,13 +92,13 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'A')
             responseWrite('rsp4', 'A')">
             No! How dare they profit off my activity and secrets!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'B')
             responseWrite('rsp4', 'B')">
             But I'm just helping them out, I guess. Nothing wrong there?
@@ -126,7 +127,7 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp5', 'A')">
             No!
         </button>
@@ -145,10 +146,10 @@
         <p>It is time to propose a solution. Let's see how we can fix the troubling problems of open and closed media.</p>
     </div>
 
-    <button class="endlink" onclick="window.location.href='both1.html'">
+    <button class="endlink" onclick="window.location.href='both1.html?theme=' + themeGet()">
         Previous Page
     </button>    
-    <button class="endlink" onclick="window.location.href='both3.html'">
+    <button class="endlink" onclick="window.location.href='both3.html?theme=' + themeGet()">
         Next Page
     </button>
 

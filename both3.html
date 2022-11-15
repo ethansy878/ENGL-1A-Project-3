@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>The Path Forward | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
         <h1 id="title">solution</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -24,12 +25,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A')">
             Instagram's Meta.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
         responseWrite('rsp1', 'B')">
             Discord Incorporated.
         </button>
@@ -66,12 +67,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'A')">
             I see. How does this relate to Discord?
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
         responseWrite('rsp2', 'B')">
             It can't be that easy, right?
         </button>
@@ -110,12 +111,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'A')">
             Cool, inspiring story!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
         responseWrite('rsp3', 'B')">
             I wish all companies were like that.
         </button>
@@ -131,10 +132,10 @@
     <div class="item nar">
         <p>The more companies make this change, the closer we get to full control of our social media usage.</p>
     </div>
-    <div class="item nar">
+    <div class="item nar finisher">
         <p>We will finally be able follow those PSAs warning against excessive screen time.</p>
     </div>
-    <div class="item nar">
+    <div class="item nar starter">
         <p>With no algorithms or bad design choices trying to hook us, we have control over our online presence.</p>
     </div>
     <div class="item nar">
@@ -144,10 +145,10 @@
         <p>...we can finally strike the delicate balance necessary for healthy social media usage.</p>
     </div>
     
-    <button class="endlink" onclick="window.location.href='both2.html'">
+    <button class="endlink" onclick="window.location.href='both2.html?theme=' + themeGet()">
         Previous Page
     </button>
-    <button class="endlink" onclick="window.location.href='end.html'">
+    <button class="endlink" onclick="window.location.href='end.html?theme=' + themeGet()">
         Next Page
     </button>
 

@@ -4,40 +4,53 @@ function responseWrite(txtID, type) {
   element.innerHTML = element.getAttribute('data-' + type);
 }
 
-// function to switch themes by managing local storage
-function themeSwitch() {
-  console.log("WIP");
+// function to switch themes by editing body element
+function themeSwitch(type) {
+    let body = document.body;
+    body.className = "";
+    switch (type) {
+        case 'df-theme':
+            body.classList.add("df-theme");
+            break;
+        case 'ig-theme':
+            body.classList.add("ig-theme");
+            break;
+        case 'dc-theme':
+            body.classList.add("dc-theme");
+            break;
+    }
+}
+
+// function to get theme
+function themeGet(){
+    return document.body.className;
+}
+
+// function to read theme from url param
+function themeParse(){
+    let queryString = window.location.search;
+    let urlParams = new URLSearchParams(queryString);
+    return urlParams.get('theme');
 }
 
 // function to set the ad in instagram #2 page
 function advertisement(type){
     let ad = document.getElementById("ad")
-    switch (type) {
-        case 'A':
-            ad.src = "images/pizza-hut-ad.png";
-            break;
-        case 'B':
-            ad.src = "images/iphone-ad.png";
-            break;
-        case 'C':
-            ad.src = "images/workout-ad.png";
-            break;
-    }
 }
 
 // function to set the quote in instagram #2 page
 function quote(type){
-  let ad = document.getElementById("quote")
-  switch (type) {
-      case 'A':
-          ad.src = "images/timmy-quote.png";
-          break;
-      case 'B':
-          ad.src = "images/parent-quote.png";
-          break;
-      case 'C':
-          ad.src = "images/pol-quote.png";
-          break;
+    let ad = document.getElementById("quote")
+    switch (type) {
+        case 'A':
+            ad.src = "images/timmy-quote.png";
+            break;
+        case 'B':
+            ad.src = "images/parent-quote.png";
+            break;
+        case 'C':
+            ad.src = "images/pol-quote.png";
+            break;
   }
 }
 

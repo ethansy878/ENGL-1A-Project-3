@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>About Discord | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
         <h1 id="title">page 4</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -24,12 +25,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A')">
             I'm familiar with it!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
         responseWrite('rsp1', 'B')">
             That app doesn't sound very nice. Pun intended.
         </button>
@@ -53,17 +54,17 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'A')">
             These features look just as cool as Instagram's!.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'B')">
             Now this is more my style of chatting.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'C')">
             Sorry, that doesn't intrigue me.
         </button>
@@ -84,10 +85,10 @@
         <p>Amidst all its offerings, Discord has issues of its own. </p>
     </div>
 
-    <button class="endlink" onclick="window.location.href='ig2.html'">
+    <button class="endlink" onclick="window.location.href='ig2.html?theme=' + themeGet()">
         Previous Page
     </button>
-    <button class="endlink" onclick="window.location.href='dc2.html'">
+    <button class="endlink" onclick="window.location.href='dc2.html?theme=' + themeGet()">
         Next Page
     </button>
 

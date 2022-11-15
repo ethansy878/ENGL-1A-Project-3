@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="styles.css">
     <title>Introduction | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
-        <h1 id="title">page 1</h1>
+        <h1 id="title">An Introduction</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
     
     
     <!-- "nar" class = narrator, "res" class = response -->
     <div class="item nar starter">
-        <p>Hey there!
+        <p>Hey there! <br>
             <i>(Hover to reveal next message)</i>
         </p>
     </div>
@@ -26,24 +27,24 @@
     </div>
 
     <div class="item res">
-        <i>(Select an option)</i>
-        <button onclick="
+        <i>(Select an option)<br><br></i>
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A') 
             responseWrite('rsp2', 'A')">
             Hello. Please introduce yourself.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'B')
             responseWrite('rsp2', 'B')">
-            Hey, nice to meet you. Let's begin the tour!
+            Hey, nice to meet you. Let's begin the talk!
         </button>
         <br>
     </div>
     
     <div class="item nar starter">
         <p id="rsp1" 
-        data-A="Greetings, my name is Ethan. I am currently a college student and will be your chat partner." 
+        data-A="Greetings, my name is Ethan. I am currently a college student and I am your chat partner." 
         data-B="Thanks! We'll get started right away.">
             ResponseText
     </p> 
@@ -61,36 +62,33 @@
     </div>
 
     <div class="item res">
-        <button onclick="themeSwitch()">
+        <button class="res-but" onclick="themeSwitch('ig-theme')">
             Instagram!
         </button>
         <br>
-        <button onclick="themeSwitch()">
+        <button class="res-but" onclick="themeSwitch('dc-theme')">
             Discord!
         </button>
         <br>
-        <button onclick="themeSwitch()">
+        <button class="res-but" onclick="themeSwitch('df-theme')">
             Neither.
         </button>
         <br>
     </div>
 
     <div class="item nar starter">
-        <p>(Work in progress - these buttons change colors of the site) <br> Great! Now we have set the vibe, and are ready to begin.</p> 
+        <p>Great! Now we have set the vibe, and are ready to begin.</p> 
     </div>
     <div class="item nar finisher">
         <p>Let's explore our first app. Click the button below!</p> 
     </div>
-
     
-    <button class="endlink" onclick="window.location.href='index.html'">
+    <button class="endlink" onclick="window.location.href='index.html?theme=' + themeGet()">
         Previous Page
     </button>
-    <button class="endlink" onclick="window.location.href='ig1.html'">
+    <button class="endlink" onclick="window.location.href='ig1.html?theme=' + themeGet()">
         Next Page
     </button>  
 
-    <!--The magic script-->
-    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>The Solution | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
         <h1 id="title">page 6</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -21,12 +22,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A')">
             Yay!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
         responseWrite('rsp1', 'B')">
             There's a positive side to all this?
         </button>
@@ -50,12 +51,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'A')">
             They look like complimentary apps.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
         responseWrite('rsp2', 'B')">
             The pros and cons nullify each other!
         </button>
@@ -82,12 +83,12 @@
     </div>
 
     <div class="res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'A')">
             Sounds like a good plan to me!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'B')">
             What about some of the other cons?
         </button>
@@ -107,7 +108,7 @@
         <p>Optimally, we optimze our time spent. We get what we need, and get out of there.</p>
     </div>
     <div class="item nar">
-        <p>This slowly breaks our reliance on the app. Eventually, we'll distance ourselves enough to be unphased by notifications.</p>
+        <p>Doing this, we'll slowly breaks our reliance on the app. Eventually, we'll distance ourselves enough to be unphased by notifications.</p>
     </div>
     <div class="item nar finisher">
         <p>Also, the less time we're online, the less chances bullies get to ruin our day. Win-win!</p>
@@ -117,17 +118,17 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp4', 'A')">
             Genius!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp4', 'B')">
             Easier said than done, but I see the benefits.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp4', 'C')">
             All this is great, but I can't put it into action!
         </button>
@@ -142,10 +143,10 @@
         </p> 
     </div>
 
-    <button class="endlink" onclick="window.location.href='dc2.html'">
+    <button class="endlink" onclick="window.location.href='dc2.html?theme=' + themeGet()">
         Previous Page
     </button>
-    <button class="endlink" onclick="window.location.href='both2.html'">
+    <button class="endlink" onclick="window.location.href='both2.html?theme=' + themeGet()">
         Next Page
     </button>
 

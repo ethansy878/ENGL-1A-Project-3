@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>About Instagram | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
         <h1 id="title">page 2</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -24,12 +25,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A')">
             Yes!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'B')">
             Insta-what?
         </button>
@@ -56,17 +57,17 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'A')">
             Wow! This app sounds convenient and full of possibilities!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'B')">
             That isn't very appealing to me.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'C')">
             All of this is great, but there's a catch, isn't there?
         </button>
@@ -83,10 +84,10 @@
         <p>As we'll see, there's trouble hiding beneath the great features marketed by the developers.</p> 
     </div>
 
-    <button class="endlink" onclick="window.location.href='intro.html'">
+    <button class="endlink" onclick="window.location.href='intro.html?theme=' + themeGet()">
         Previous Page
     </button>
-    <button class="endlink" onclick="window.location.href='ig2.html'">
+    <button class="endlink" onclick="window.location.href='ig2.html?theme=' + themeGet()">
         Next Page
     </button>
 

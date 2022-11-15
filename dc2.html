@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>Problems with Discord | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
         <h1 id="title">page 5</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -24,13 +25,13 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A')
             responseWrite('rsp2', 'A')">
             Huh? What's wrong with this sound?
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'B')
             responseWrite('rsp2', 'B')">
             DID YOU JUST PING ME?
@@ -61,7 +62,7 @@
             <input type="checkbox" id="scenario3" name="scenario3" value="Boat">
             <label for="vehicle3"> I am a part of a large server with notifications on. </label><br>
           </form>
-        <button onclick="
+        <button class="res-but" onclick="
           evalResponses() /*also includes responseWrite*/">
           Confirm
       </button>
@@ -78,13 +79,13 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'A')
             responseWrite('rsp4', 'A')">
             How do I make it stop?
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'B')
             responseWrite('rsp4', 'B')">
             How are you supposed to focus on anything with this distraction in your ear?
@@ -115,12 +116,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp5', 'A')">
             Uh oh...
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp5', 'A')">
             Bring it on.
         </button>
@@ -147,12 +148,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp6', 'A')">
             How could he?
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp6', 'B')">
             In other words, he ghosted you?
         </button>
@@ -188,14 +189,14 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp7', 'A')">
             Now I am scared to make friends, both there and everywhere!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp7', 'B')">
-            I understand. Sometimes it's hard to talk to strangers, then this happens, and it only gets worse.
+            I understand. Sometimes strangers are scary, and this only makes it worse.
         </button>
     </div>
 
@@ -210,10 +211,10 @@
         <p>Maybe there is some way of balancing Discord's problems here with, say, Instagram's features. Hmmm...</p> 
     </div>
 
-    <button class="endlink" onclick="window.location.href='dc1.html'">
+    <button class="endlink" onclick="window.location.href='dc1.html?theme=' + themeGet()">
         Previous Page
     </button>
-    <button class="endlink" onclick="window.location.href='both1.html'">
+    <button class="endlink" onclick="window.location.href='both1.html?theme=' + themeGet()">
         Next Page
     </button>
 

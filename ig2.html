@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <title>Problems with Instagram | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="section-container">
         <h1 id="title">page 3</h1>
     </div>
     <br>
     <script src="functions.js"></script>
+    <script>themeSwitch((themeParse()));</script>
 
 
     <!-- "nar" class = narrator, "res" class = response -->
@@ -27,17 +28,17 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             advertisement('A')">
             best pizza places
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             advertisement('B')">
             new iPhone review
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             advertisement('C')">
             quick workout idea
         </button>
@@ -55,12 +56,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'A')">
             Wait, say that again! You got cut off by a sponsored message!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp1', 'B')">
             Huh? Why is this on my screen?
         </button>
@@ -80,12 +81,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'A')">
             That's so annoying!
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp2', 'B')">
             It had to interfere, didn't it?
         </button>
@@ -105,12 +106,12 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'A')">
             It gets worse?
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp3', 'A')">
             I don't like where this is going.
         </button>
@@ -123,17 +124,17 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             quote('A')">
             Let's see the message from "little.timmy.plays.99".
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             quote('B')">
             Let's see the message from "thebestparent".
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             quote('C')">
             Let's see the message from "PoliticianPeter".
         </button>
@@ -148,14 +149,14 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp5', 'A')">
             That message grinds my gears. Why is that person so mean?
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp5', 'B')">
-            Heated is an understatement. That's basically toxicity!
+            Heated is an understatement. You can call it toxicity!
         </button>
     </div>
 
@@ -173,13 +174,13 @@
     </div>
 
     <div class="item res">
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp6', 'A')
             responseWrite('rsp7', 'A')">
             What a tragic lose-lose situation.
         </button>
         <br>
-        <button onclick="
+        <button class="res-but" onclick="
             responseWrite('rsp6', 'B')
             responseWrite('rsp7', 'B')">
             That is terrible. Have they ever attacked you?
@@ -205,10 +206,10 @@
         <p>It can become a scary place, to say the least.</p>
     </div>
 
-    <button class="endlink" onclick="window.location.href='ig1.html'">
+    <button class="endlink" onclick="window.location.href='ig1.html?theme=' + themeGet()">
         Previous Page
     </button>
-    <button class="endlink" onclick="window.location.href='dc1.html'">
+    <button class="endlink" onclick="window.location.href='dc1.html?theme=' + themeGet()">
         Next Page
     </button>
 

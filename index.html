@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Front Page | Open and Closed Media</title>
 </head>
-<body>
+<body class="df-theme">
     <div id="title-container">
         <h1 class="title-text" id="title">Open and Closed Media</h1>
         <h2 class="title-text" id="subtitle">Instagram, Discord, and a Delicate Balance</h2>
@@ -21,6 +21,8 @@
         <!--img id="title-scroll-arrow" src="/images/arrow.png" alt="arrow indicating scroll down"-->
     </div>
     <br>
+    <script src="functions.js"></script>
+
 
     <div id="overview-container"> <!--uses flex boxes-->
         <div class="row">
@@ -44,7 +46,7 @@
         </div>
     </div>
 
-    <button class="endlink" onclick="window.location.href='intro.html'">
+    <button class="endlink" onclick="window.location.href='intro.html?theme=' + themeGet()">
         Begin
     </button>  
 
