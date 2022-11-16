@@ -20,7 +20,7 @@
     <!-- "nar" class = narrator, "res" class = response -->
     <div class="item nar starter">
         <p>Hey there! <br>
-            <i>(Hover to reveal next message)</i>
+            <i>(Click or tap to reveal next message)</i>
         </p>
     </div>
     <div class="item nar finisher">
@@ -30,16 +30,18 @@
     <!--script>currentItem = revealItem(currentItem, itemList);</script-->
 
     <div class="item res">
-        <i>(Select an option)<br><br></i>
+        <i>(Click or tap an option)<br><br></i>
         <button class="res-but" onclick="
             responseWrite('rsp1', 'A') 
-            responseWrite('rsp2', 'A')">
+            responseWrite('rsp2', 'A')
+            fillRes(this)">
             Hello. Please introduce yourself.
         </button>
         <br>
         <button class="res-but" onclick="
             responseWrite('rsp1', 'B')
-            responseWrite('rsp2', 'B')">
+            responseWrite('rsp2', 'B')
+            fillRes(this)">
             Hey, nice to meet you. Let's begin the talk!
         </button>
         <br>

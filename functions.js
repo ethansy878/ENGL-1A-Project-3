@@ -1,10 +1,10 @@
-// Function: runs when page is loaded, includes mouse over control
+// Function: runs when page is loaded, sets up click control
 function initializeItems() {
     window.addEventListener('DOMContentLoaded', (event) => {
         // Get HTMLCollection of nar and res divs in page
         const elementsCollection = document.getElementsByClassName("item");
         
-        // Convert to static array (live-ness of HTMLColl. is bad for these purposes)
+        // Convert to static array (live-ness of HTMLColl. is bad for this)
         const elements = Array.prototype.slice.call(elementsCollection);
 
         revealItem(0, elements);
@@ -13,9 +13,14 @@ function initializeItems() {
         elements.forEach((elem) => {
             if (!elem.classList.contains("res")){
                 // For nar, add listener to all divs 
-                elem.addEventListener('mouseenter', (event) => {
+                elem.addEventListener('click', (event) => {
+                    // Guard against bad clicks
+                    if (!elem.classList.contains("focus")){
+                        return;
+                    }
+
                     let thisItem = elements.indexOf(elem);
-                    // targetItem = thisItem + 1
+                    // the targetItem is thisItem + 1
                     console.log("hovered over " + elem.classList);
                     revealItem(thisItem + 1, elements);
                 })
@@ -33,8 +38,13 @@ function initializeItems() {
                 buttons.forEach((elemm) => {
                     // Add listeners
                     elemm.addEventListener('click', (event) => {
+                        // Guard against bad clicks
+                        if (!elem.classList.contains("focus")){
+                            return;
+                        }
+
                         let thisItem = elements.indexOf(elem);
-                        // targetItem = thisItem + 1
+                        // the targetItem is thisItem + 1
                         console.log("clicked on a button in " + elem.classList);
                         revealItem(thisItem + 1, elements);
                     });
@@ -57,19 +67,41 @@ function revealItem(i, elements){
     // Do the reveal by removing the "hiding" class
     try {
         elements[i].classList.toggle("item", false);
+        elements[i].classList.toggle("focus", true);
+        if (!i == 0){
+            elements[i-1].classList.toggle("focus", false);
+        }
+        console.log("revealing " + elements[i].classList);
     } catch (error) {
         //alert("End of page");
         // NOTE: I decided to get rid of the alert after
         // testing how the site runs.
+
+        // Remove focus from last text box here
+        elements[i-1].classList.toggle("focus", false);
+
+        // Print to console and activate start-of-function guard
+        console.log("end of page, stopping reveal functions");
         endPage = true;
     }
-    console.log("revealing " + elements[i].classList);
 }
 
 // Function: write into narration box based on what user clicks in response box
 function responseWrite(txtID, type) {
-  element = document.getElementById(txtID);
-  element.innerHTML = element.getAttribute('data-' + type);
+    element = document.getElementById(txtID);
+    element.innerHTML = element.getAttribute('data-' + type);
+}
+
+// Function: write dialogue into res box and delete buttons
+function fillRes(button){
+    const parent = button.parentElement;
+    const chosenText = button.innerText;
+
+    while (parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
+    parent.innerText = chosenText;
+
 }
 
 // Function: to switch themes by editing body element
