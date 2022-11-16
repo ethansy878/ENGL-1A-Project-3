@@ -14,6 +14,7 @@
     <br>
     <script src="functions.js"></script>
     <script>themeSwitch((themeParse()));</script>
+    <script>initializeItems();</script>
     <noscript>Warning: JavaScript is DISABLED. The main features of the website will not work!</noscript>
 
 
@@ -27,12 +28,14 @@
 
     <div class="item res">
         <button class="res-but" onclick="
-            responseWrite('rsp1', 'A')">
+            responseWrite('rsp1', 'A')
+            responseWrite('rsp2', 'A')">
             Instagram's Meta.
         </button>
         <br>
         <button class="res-but" onclick="
-        responseWrite('rsp1', 'B')">
+        responseWrite('rsp1', 'B')
+        responseWrite('rsp2', 'B')">
             Discord Incorporated.
         </button>
     </div>
@@ -45,7 +48,7 @@
         </p> 
     </div>
     <div class="item nar">
-        <p id="rsp1" 
+        <p id="rsp2" 
         data-A="They have a bad rep for causing those issues and then some. They also have comparatively low progress in remediating their issues. The real hero to follow is Discord."
         data-B="They have an inspiring narrative that any company can realistically follow.">
             ResponseText
@@ -58,7 +61,10 @@
         <p>They make an app similar to Discord, but geared for workplaces.</p>
     </div>
     <div class="item nar">
-        <p>What matters, though, is their design philosophy. The company “asks designers to close their eyes and imagine what a person might have experienced in their life before sitting down at their desk” (Wachter-Boettcher 190).</p>
+        <p>What matters, though, is their design philosophy. Once again, Watcher-Boettcher describes the company's ways:</p>
+    </div>
+    <div class="item nar">
+        <p>Slack “asks designers to close their eyes and imagine what a person might have experienced in their life before sitting down at their desk” (190).</p>
     </div>
     <div class="item nar">
         <p>In other words, they want developers to design with the user in mind.</p>
@@ -69,18 +75,18 @@
 
     <div class="item res">
         <button class="res-but" onclick="
-            responseWrite('rsp2', 'A')">
+            responseWrite('rsp3', 'A')">
             I see. How does this relate to Discord?
         </button>
         <br>
         <button class="res-but" onclick="
-        responseWrite('rsp2', 'B')">
+        responseWrite('rsp3', 'B')">
             It can't be that easy, right?
         </button>
     </div>
 
     <div class="item nar starter">
-        <p id="rsp2" 
+        <p id="rsp3" 
         data-A="Believe it or not, Discord basically followed them!" 
         data-B="Surprise, it is! This is where Discord's story comes into play.">
             ResponseText
@@ -113,18 +119,18 @@
 
     <div class="item res">
         <button class="res-but" onclick="
-            responseWrite('rsp3', 'A')">
+            responseWrite('rsp4', 'A')">
             Cool, inspiring story!
         </button>
         <br>
         <button class="res-but" onclick="
-        responseWrite('rsp3', 'B')">
+            responseWrite('rsp4', 'B')">
             I wish all companies were like that.
         </button>
     </div>
 
     <div class="item nar starter">
-        <p id="rsp3" 
+        <p id="rsp4" 
         data-A="It really is. What's better, anyone can do it." 
         data-B="Your wish is exactly what will solve the issues of open and closed media.">
             ResponseText

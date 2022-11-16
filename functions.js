@@ -1,10 +1,78 @@
-// function to write into narration box based on what user clicks in response box
+// Function: runs when page is loaded, includes mouse over control
+function initializeItems() {
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // Get HTMLCollection of nar and res divs in page
+        const elementsCollection = document.getElementsByClassName("item");
+        
+        // Convert to static array (live-ness of HTMLColl. is bad for these purposes)
+        const elements = Array.prototype.slice.call(elementsCollection);
+
+        revealItem(0, elements);
+
+        // Set up mouse over events, different for nar and res divs
+        elements.forEach((elem) => {
+            if (!elem.classList.contains("res")){
+                // For nar, add listener to all divs 
+                elem.addEventListener('mouseenter', (event) => {
+                    let thisItem = elements.indexOf(elem);
+                    // targetItem = thisItem + 1
+                    console.log("hovered over " + elem.classList);
+                    revealItem(thisItem + 1, elements);
+                })
+            }
+            else if (elem.classList.contains("res")){
+                // For res buttons, start with HTMLColl of responses
+                const buttonsCollection = elem.getElementsByClassName("res-but");
+
+                // Convert to static array
+                const buttons = Array.prototype.slice.call(buttonsCollection);
+
+                console.log(buttons);
+
+                // Making sure to apply event to all buttons
+                buttons.forEach((elemm) => {
+                    // Add listeners
+                    elemm.addEventListener('click', (event) => {
+                        let thisItem = elements.indexOf(elem);
+                        // targetItem = thisItem + 1
+                        console.log("clicked on a button in " + elem.classList);
+                        revealItem(thisItem + 1, elements);
+                    });
+                });
+            }
+        })
+    });
+}
+
+// Helper variable for next function
+let endPage = false;
+
+// Function: reveals the current item and increments item index
+function revealItem(i, elements){
+    // Guard against endless end of page attempts
+    if (endPage){
+        return;
+    }
+
+    // Do the reveal by removing the "hiding" class
+    try {
+        elements[i].classList.toggle("item", false);
+    } catch (error) {
+        //alert("End of page");
+        // NOTE: I decided to get rid of the alert after
+        // testing how the site runs.
+        endPage = true;
+    }
+    console.log("revealing " + elements[i].classList);
+}
+
+// Function: write into narration box based on what user clicks in response box
 function responseWrite(txtID, type) {
   element = document.getElementById(txtID);
   element.innerHTML = element.getAttribute('data-' + type);
 }
 
-// function to switch themes by editing body element
+// Function: to switch themes by editing body element
 function themeSwitch(type) {
     let body = document.body;
     body.className = "";
@@ -23,24 +91,35 @@ function themeSwitch(type) {
     }
 }
 
-// function to get theme
+// Function: get theme
 function themeGet(){
     return document.body.className;
 }
 
-// function to read theme from url param
+// Function: read theme from url param
 function themeParse(){
     let queryString = window.location.search;
     let urlParams = new URLSearchParams(queryString);
     return urlParams.get('theme');
 }
 
-// function to set the ad in instagram #2 page
+// Function: set the ad in instagram #2 page
 function advertisement(type){
     let ad = document.getElementById("ad")
+    switch (type) {
+        case 'A':
+            ad.src = "images/pizza-hut-ad.png";
+            break;
+        case 'B':
+            ad.src = "images/iphone-ad.png";
+            break;
+        case 'C':
+            ad.src = "images/workout-ad.png";
+            break;
+  }
 }
 
-// function to set the quote in instagram #2 page
+// Function: set the quote in instagram #2 page
 function quote(type){
     let ad = document.getElementById("quote")
     switch (type) {
@@ -59,7 +138,7 @@ function quote(type){
 // audio file for discord #2 page
 let audio = new Audio('audios/ping.mp3');
 
-// function that plays the discord audio
+// Function: play the discord audio
 function playAudio(type, count){
     if (type == "delay") {
         setTimeout(function(){
@@ -78,7 +157,7 @@ function playAudio(type, count){
     }
 }
 
-// function that evaluates the responses on discord #2 page
+// Function: evaluate the responses on discord #2 page
 function evalResponses(){
     let box1 = document.getElementById("scenario1");
     let box2 = document.getElementById("scenario2");
