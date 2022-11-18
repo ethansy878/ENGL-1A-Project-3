@@ -54,7 +54,7 @@
         <p>It seems like such a harmless task, searching for information, but-</p> 
     </div>
     <div class="item nar">
-        <p>(A Message from our Sponsor) <br> <img id="ad" src="images/placeholder.png"></p>
+        <p>(A Message from our Sponsor) <br> <img id="ad" src="images/placeholder.png" alt="A message from our sponsor"></p>
     </div>
     <div class="item nar finisher">
         <p>...can get in the way of your usage.</p>
@@ -76,12 +76,12 @@
 
     <div class="item nar starter">
         <p id="rsp1"
-        data-A="Wait, what? A sponsored message... oh, an ad! It blocked  our conversation?"
+        data-A="Wait, what? A sponsored message... oh, an ad! It blocked our conversation?"
         data-B="What is? Oh, wait, I know: a sponsored message that looks like an advertisement.">
         ResponseText</p>
     </div>
     <div class="item nar">
-        <p>That's the algorithm at work! I was explaining that before I was rudely interrupted.</p>
+        <p>Well, that's the algorithm at work! I was explaining that before I got rudely interrupted.</p>
     </div>
     <div class="item nar finisher">
         <p>The algorithm thought that ad was relevant to you based on your search. It also predicted that you would interact with it even if you didn't want to in the moment.</p>
@@ -91,7 +91,7 @@
         <button class="res-but" onclick="
             responseWrite('rsp2', 'A')
             fillRes(this)">
-            That's so annoying!
+            Ugh! That's so annoying!
         </button>
         <br>
         <button class="res-but" onclick="
@@ -122,16 +122,20 @@
         </button>
         <br>
         <button class="res-but" onclick="
-            responseWrite('rsp3', 'A')
+            responseWrite('rsp3', 'B')
             fillRes(this)">
             I don't like where this is going.
         </button>
     </div>
 
-    <div class="item nar starter finisher">
+    <div class="item nar starter">
         <p id="rsp3"
-        data-A="Mhm. Now, I have saved three messages that represent our next problem. Please select whose message you want to see:">
+        data-A="Yea..."
+        data-A="Ngl, me neither.">
         ResponseText</p>
+    </div>
+    <div class="item nar finisher">
+        <p>Now, I saved three messages to help demonstrate our next problem. Please choose whose message you want to see:</p>
     </div>
 
     <div class="item res">
@@ -155,7 +159,7 @@
     </div>
 
     <div class="item nar starter">
-        <p> <img id="quote" style="width: 100%;" src="images/placeholder.png"></p>
+        <p> <img id="quote" style="width: 100%;" src="images/placeholder.png" alt="A quote from a social media user"></p>
         <!--image src changed by quote() function-->
     </div>
     <div class="item nar finisher">
