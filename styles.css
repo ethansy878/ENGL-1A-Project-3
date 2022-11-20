@@ -66,7 +66,6 @@
     --borderTop: 4px;
     --borderRad: 0px;
 
-
     --txtSizing: "max-content";
     --txtMax: 100vw;
     --fontFam: 'Lucida Sans';
@@ -313,9 +312,6 @@ audio {
             
     margin: 0px;
     padding: 2px;
-
-    /*border-color: white;
-    border-style: solid;*/
 }
 
 #author {
@@ -328,14 +324,7 @@ audio {
     height: 5%;
     min-height: 30px;
     width: 100%;
-
-    /*border-color: white;
-    border-style: solid;*/
 }
-
-/*
-#overview-container {
-}*/
 
 .row {
     display: flex;
@@ -394,7 +383,6 @@ audio {
     margin-left: calc(5px + 1vw);
     padding: 0px;
     align-self: center;
-
 }
 
 .cover-arrow {
