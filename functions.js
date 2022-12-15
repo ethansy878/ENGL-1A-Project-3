@@ -142,13 +142,13 @@ function advertisement(type){
     let ad = document.getElementById("ad")
     switch (type) {
         case 'A':
-            ad.src = "images/pizza-hut-ad.png";
+            ad.src = "./images/pizza-hut-ad.png";
             break;
         case 'B':
-            ad.src = "images/iphone-ad.png";
+            ad.src = "./images/iphone-ad.png";
             break;
         case 'C':
-            ad.src = "images/workout-ad.png";
+            ad.src = "./images/workout-ad.png";
             break;
   }
 }
@@ -158,19 +158,19 @@ function quote(type){
     let ad = document.getElementById("quote")
     switch (type) {
         case 'A':
-            ad.src = "images/timmy-quote.png";
+            ad.src = "./images/timmy-quote.png";
             break;
         case 'B':
-            ad.src = "images/parent-quote.png";
+            ad.src = "./images/parent-quote.png";
             break;
         case 'C':
-            ad.src = "images/pol-quote.png";
+            ad.src = "./images/pol-quote.png";
             break;
   }
 }
 
 // audio file for discord #2 page
-let audio = new Audio('audios/ping.mp3');
+let audio = new Audio('./audios/ping.mp3');
 
 // Function: play the discord audio
 function playAudio(type, count){
