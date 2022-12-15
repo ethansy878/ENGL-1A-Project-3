@@ -1,3 +1,5 @@
+// JavaScript for whole website (all html pages)
+
 // Function: runs when page is loaded, sets up click control
 function initializeItems() {
     window.addEventListener('DOMContentLoaded', (event) => {
